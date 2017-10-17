@@ -3068,3 +3068,28 @@ INFO - 2017-10-17 03:10:49 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSo
 INFO - 2017-10-17 03:10:49 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
 INFO - 2017-10-17 03:10:49 --> Final output sent to browser
 DEBUG - 2017-10-17 03:10:49 --> Total execution time: 0.0412
+INFO - 2017-10-17 04:12:07 --> Config Class Initialized
+INFO - 2017-10-17 04:12:07 --> Hooks Class Initialized
+DEBUG - 2017-10-17 04:12:07 --> UTF-8 Support Enabled
+INFO - 2017-10-17 04:12:07 --> Utf8 Class Initialized
+INFO - 2017-10-17 04:12:07 --> URI Class Initialized
+DEBUG - 2017-10-17 04:12:07 --> No URI present. Default controller set.
+INFO - 2017-10-17 04:12:07 --> Router Class Initialized
+INFO - 2017-10-17 04:12:07 --> Output Class Initialized
+INFO - 2017-10-17 04:12:07 --> Security Class Initialized
+DEBUG - 2017-10-17 04:12:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 04:12:07 --> Input Class Initialized
+INFO - 2017-10-17 04:12:07 --> Language Class Initialized
+INFO - 2017-10-17 04:12:07 --> Loader Class Initialized
+DEBUG - 2017-10-17 04:12:07 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 04:12:07 --> Helper loaded: security_helper
+INFO - 2017-10-17 04:12:07 --> Helper loaded: form_helper
+INFO - 2017-10-17 04:12:07 --> Helper loaded: url_helper
+INFO - 2017-10-17 04:12:07 --> Database Driver Class Initialized
+INFO - 2017-10-17 04:12:07 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 04:12:07 --> Pagination Class Initialized
+INFO - 2017-10-17 04:12:07 --> Controller Class Initialized
+INFO - 2017-10-17 04:12:07 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/dashboard.php
+INFO - 2017-10-17 04:12:07 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 04:12:07 --> Final output sent to browser
+DEBUG - 2017-10-17 04:12:07 --> Total execution time: 0.0325
