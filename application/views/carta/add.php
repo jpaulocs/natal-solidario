@@ -27,7 +27,7 @@
 				</div>
 				<div class="row clearfix">
 					<div class="col-md-6">
-						<label for="representante_comunidade" class="control-label">Representante da Comunidade</label>
+						<label for="representante_comunidade" class="control-label"><span class="text-danger">*</span>Representante da Comunidade</label>
 						<div class="form-group">
 							<select name="representante_comunidade" class="form-control">
 								<option value=""></option>
@@ -43,12 +43,13 @@
 								} 
 								?>
 							</select>
+							<span class="text-danger"><?php echo form_error('representante_comunidade');?></span>
 						</div>
 					</div>
 				</div>
 				<div class="row clearfix">
 					<div class="col-md-6">
-						<label for="carteiro_associado" class="control-label">Carteiro</label>
+						<label for="carteiro_associado" class="control-label"><span class="text-danger">*</span>Carteiro</label>
 						<div class="form-group">
 							<select name="carteiro_associado" class="form-control">
 								<option value=""></option>
@@ -63,6 +64,7 @@
 								} 
 								?>
 							</select>
+							<span class="text-danger"><?php echo form_error('carteiro_associado');?></span>
 						</div>
 					</div>
 
@@ -70,7 +72,7 @@
 
 				<div class="row clearfix">
 					<div class="col-md-4">
-						<label for="regiao_administrativa" class="control-label">RA</label>
+						<label for="regiao_administrativa" class="control-label"><span class="text-danger">*</span>Região Administrativa</label>
 						<div class="form-group">
 							<select name="regiao_administrativa" class="form-control">
 								<option value=""></option>
@@ -106,13 +108,14 @@
 								<option value="23">Varjão</option>
 								<option value="30">Vicente Pires</option>
 							</select>
+							<span class="text-danger"><?php echo form_error('regiao_administrativa');?></span>
 						</div>
 					</div>
 				</div>
 			</div>
           	<div class="box-footer">
             	<button type="submit" class="btn btn-success">
-            		<i class="fa fa-check"></i> Save
+            		<i class="fa fa-check"></i> Salvar
             	</button>
           	</div>
             <?php echo form_close(); ?>

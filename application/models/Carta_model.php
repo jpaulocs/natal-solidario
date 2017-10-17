@@ -24,6 +24,10 @@ class Carta_model extends CI_Model
      */
     function get_all_cartas()
     {
+        $this->db->select('carta.*, beneficiado.nome as beneficiado_nome, u.nome as representante_comunidade_nome, u2.nome as carteiro_nome');
+        $this->db->join('beneficiado', 'carta.beneficiado = beneficiado.id');
+        $this->db->join('usuario u', 'carta.representante_comunidade = u.id');
+         $this->db->join('usuario u2', 'carta.carteiro_associado = u2.id');
         $this->db->order_by('id', 'desc');
         return $this->db->get('carta')->result_array();
     }

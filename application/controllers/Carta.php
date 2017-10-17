@@ -9,6 +9,7 @@ class Carta extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('Carta_model');
+        $this->load->library('session');
     } 
 
     /*
@@ -30,20 +31,29 @@ class Carta extends CI_Controller{
         $this->load->library('form_validation');
 
 		$this->form_validation->set_rules('beneficiado','Beneficiado','required');
+        $this->form_validation->set_rules('representante_comunidade','Representante Comunidade','required');
+        $this->form_validation->set_rules('carteiro_associado','Carteiro','required');
+        $this->form_validation->set_rules('regiao_administrativa','Região Administrativa','required');
 		
 		if($this->form_validation->run())     
         {   
+            $ano = date('Y');
+            $regiaoAdministrativa = str_pad($this->input->post('regiao_administrativa'), 2, "0", STR_PAD_LEFT);
+            $idBeneficiado = str_pad($this->input->post('beneficiado'), 5, "0", STR_PAD_LEFT);
+
             $params = array(
 				'beneficiado' => $this->input->post('beneficiado'),
 				'representante_comunidade' => $this->input->post('representante_comunidade'),
 				'carteiro_associado' => $this->input->post('carteiro_associado'),
 				'data_cadastro' => date('Y-m-d H:i:s'),
-				'numero' => date('Y') . $this->input->post('regiao_administrativa') . 
-                str_pad($this->input->post('beneficiado'), 5, "0", STR_PAD_LEFT),
-                //'regiao_administrativa' = $this->input->post('regiao_administrativa')
+				'numero' => $ano . $regiaoAdministrativa . $idBeneficiado,
+                'regiao_administrativa' => $this->input->post('regiao_administrativa')
             );
             
             $carta_pedido_id = $this->Carta_model->add_carta_pedido($params);
+
+            $this->session->set_flashdata('numero_carta_criada', $ano . $regiaoAdministrativa . $idBeneficiado);
+
             redirect('carta/index');
         }
         else
@@ -54,7 +64,7 @@ class Carta extends CI_Controller{
 			$this->load->model('Usuario_model');
 			$data['all_usuarios'] = $this->Usuario_model->get_all_usuarios();
 			//$data['all_usuarios'] = $this->Usuario_model->get_all_usuarios();
-            
+
             $data['_view'] = 'carta/add';
             $this->load->view('layouts/main',$data);
         }

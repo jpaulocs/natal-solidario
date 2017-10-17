@@ -23,7 +23,7 @@
                     <tr>
                         <!-- <td><//?php echo $r['id']; ?></td> -->
                         <td><?php echo $r['nome']; ?></td>
-                        <td><?php echo $r['data_nascimento']; ?></td>
+                        <td><?php echo date("d/m/Y", strtotime($r['data_nascimento'])); ?></td>
                         <td><?php echo $r['endereco']; ?></td>
                         <td><?php echo $r['cidade']; ?></td>
                         <td><?php echo $r['uf']; ?></td>
