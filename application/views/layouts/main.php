@@ -47,7 +47,7 @@
                             <li class="dropdown user user-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="<?php echo site_url('resources/img/logo-natalsolidario.png');?>" class="user-image" alt="User Image">
-                                    <span class="hidden-xs">Natal Solidário</span>
+                                    <span class="hidden-xs"><?php echo $this->session->userdata('usuario_logado'); ?></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <!-- User image -->
@@ -55,8 +55,7 @@
                                         <img src="<?php echo site_url('resources/img/logo-natalsolidario.png');?>" class="img-circle" alt="User Image">
 
                                     <p>
-                                        Natal Solidário
-                                        <small>2017</small>
+                                        <?php echo $this->session->userdata('usuario_logado'); ?>
                                     </p>
                                     </li>
                                     <!-- Menu Footer-->
@@ -65,7 +64,7 @@
                                             <a href="#" class="btn btn-default btn-flat">Profile</a>
                                         </div>
                                         <div class="pull-right">
-                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                            <a href="<?php echo site_url('login/logout');?>" class="btn btn-default btn-flat">Sair</a>
                                         </div>
                                     </li>
                                 </ul>

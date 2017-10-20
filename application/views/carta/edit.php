@@ -2,7 +2,7 @@
     <div class="col-md-12">
       	<div class="box box-info">
             <div class="box-header with-border">
-              	<h3 class="box-title">Carta Pedido Edit</h3>
+              	<h3 class="box-title">Editar Carta</h3>
             </div>
 			<?php echo form_open('carta/edit/'.$carta_pedido['id']); ?>
 			<div class="box-body">
@@ -41,13 +41,11 @@
 							<select name="representante_comunidade" class="form-control">
 								<option value=""></option>
 								<?php 
-								foreach($all_usuarios as $usuario)
+								foreach($all_repr_comunidade as $usuario)
 								{
-									if($usuario['perfil'] === "1"){
-										$selected = ($usuario['id'] == $carta_pedido['representante_comunidade']) ? ' selected="selected"' : "";
+									$selected = ($usuario['id'] == $carta_pedido['representante_comunidade']) ? ' selected="selected"' : "";
 
-										echo '<option value="'.$usuario['id'].'" '.$selected.'>'.$usuario['nome'].'</option>';
-									}
+									echo '<option value="'.$usuario['id'].'" '.$selected.'>'.$usuario['first_name'].'</option>';
 								} 
 								?>
 							</select>
@@ -61,32 +59,41 @@
 							<select name="carteiro_associado" class="form-control">
 								<option value=""></option>
 								<?php 
-								foreach($all_usuarios as $usuario)
+								foreach($all_carteiros as $usuario)
 								{
-									if($usuario['perfil'] === "3"){
-										$selected = ($usuario['id'] == $carta_pedido['carteiro_associado']) ? ' selected="selected"' : "";
+									$selected = ($usuario['id'] == $carta_pedido['carteiro_associado']) ? ' selected="selected"' : "";
 
-										echo '<option value="'.$usuario['id'].'" '.$selected.'>'.$usuario['nome'].'</option>';
-									}
+									echo '<option value="'.$usuario['id'].'" '.$selected.'>'.$usuario['first_name'].'</option>';
 								} 
 								?>
 							</select>
 						</div>
 					</div>
 				</div>
+				
 				<div class="row clearfix">
-					<div class="col-md-6">
-						<label for="data_cadastro" class="control-label">Data Cadastro</label>
+					<div class="col-md-4">
+						<label for="regiao_administrativa" class="control-label"><span class="text-danger">*</span>Região Administrativa</label>
 						<div class="form-group">
-							<input disabled type="text" name="data_cadastro" value="<?php echo ($this->input->post('data_cadastro') ? $this->input->post('data_cadastro') : $carta_pedido['data_cadastro']); ?>" class="has-datetimepicker form-control" id="data_cadastro" />
-							<span class="text-danger"><?php echo form_error('data_cadastro');?></span>
+							<select name="regiao_administrativa" class="form-control">
+								<option value=""></option>
+								<?php 
+									foreach($all_regioes as $regiao_administrativa)
+									{
+										$selected = ($regiao_administrativa['id'] == $carta_pedido['regiao_administrativa']) ? ' selected="selected"' : "";
+
+										echo '<option value="'.$regiao_administrativa['id'].'" '.$selected.'>'.$regiao_administrativa['nome'].'</option>';
+									} 
+								?>
+							</select>
+							<span class="text-danger"><?php echo form_error('regiao_administrativa');?></span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="box-footer">
             	<button type="submit" class="btn btn-success">
-					<i class="fa fa-check"></i> Save
+					<i class="fa fa-check"></i> Salvar
 				</button>
 	        </div>				
 			<?php echo form_close(); ?>

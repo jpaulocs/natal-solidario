@@ -9,6 +9,20 @@ class Usuario extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('Usuario_model');
+        $this->load->library('form_validation');
+
+        $this->load->add_package_path(APPPATH.'third_party/ion_auth/');
+        $this->load->library('ion_auth');
+
+        if (!$this->ion_auth->logged_in())
+        {
+            $this->session->set_flashdata('message', 'You must be an admin to view this page');
+            redirect('login');
+        } else {
+            $user = $this->ion_auth->user()->row();
+            $this->session->set_userdata('usuario_logado', $user->email);
+            
+        }
     } 
 
     /*
@@ -85,4 +99,5 @@ class Usuario extends CI_Controller{
         else
             show_error('The usuario you are trying to edit does not exist.');
     }
+    
 }

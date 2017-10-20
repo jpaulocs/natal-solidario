@@ -3093,3 +3093,1837 @@ INFO - 2017-10-17 04:12:07 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSo
 INFO - 2017-10-17 04:12:07 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
 INFO - 2017-10-17 04:12:07 --> Final output sent to browser
 DEBUG - 2017-10-17 04:12:07 --> Total execution time: 0.0325
+INFO - 2017-10-17 12:28:17 --> Config Class Initialized
+INFO - 2017-10-17 12:28:17 --> Hooks Class Initialized
+DEBUG - 2017-10-17 12:28:17 --> UTF-8 Support Enabled
+INFO - 2017-10-17 12:28:17 --> Utf8 Class Initialized
+INFO - 2017-10-17 12:28:17 --> URI Class Initialized
+DEBUG - 2017-10-17 12:28:17 --> No URI present. Default controller set.
+INFO - 2017-10-17 12:28:17 --> Router Class Initialized
+INFO - 2017-10-17 12:28:17 --> Output Class Initialized
+INFO - 2017-10-17 12:28:17 --> Security Class Initialized
+DEBUG - 2017-10-17 12:28:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 12:28:17 --> Input Class Initialized
+INFO - 2017-10-17 12:28:17 --> Language Class Initialized
+INFO - 2017-10-17 12:28:17 --> Loader Class Initialized
+DEBUG - 2017-10-17 12:28:17 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 12:28:17 --> Helper loaded: security_helper
+INFO - 2017-10-17 12:28:17 --> Helper loaded: form_helper
+INFO - 2017-10-17 12:28:17 --> Helper loaded: url_helper
+INFO - 2017-10-17 12:28:17 --> Database Driver Class Initialized
+INFO - 2017-10-17 12:28:17 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 12:28:17 --> Pagination Class Initialized
+INFO - 2017-10-17 12:28:17 --> Controller Class Initialized
+INFO - 2017-10-17 12:28:17 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/dashboard.php
+INFO - 2017-10-17 12:28:17 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 12:28:17 --> Final output sent to browser
+DEBUG - 2017-10-17 12:28:17 --> Total execution time: 0.0923
+INFO - 2017-10-17 12:28:20 --> Config Class Initialized
+INFO - 2017-10-17 12:28:20 --> Hooks Class Initialized
+DEBUG - 2017-10-17 12:28:20 --> UTF-8 Support Enabled
+INFO - 2017-10-17 12:28:20 --> Utf8 Class Initialized
+INFO - 2017-10-17 12:28:20 --> URI Class Initialized
+INFO - 2017-10-17 12:28:20 --> Router Class Initialized
+INFO - 2017-10-17 12:28:20 --> Output Class Initialized
+INFO - 2017-10-17 12:28:20 --> Security Class Initialized
+DEBUG - 2017-10-17 12:28:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 12:28:20 --> Input Class Initialized
+INFO - 2017-10-17 12:28:20 --> Language Class Initialized
+ERROR - 2017-10-17 12:28:20 --> 404 Page Not Found: Faviconico/index
+INFO - 2017-10-17 14:26:47 --> Config Class Initialized
+INFO - 2017-10-17 14:26:47 --> Hooks Class Initialized
+DEBUG - 2017-10-17 14:26:47 --> UTF-8 Support Enabled
+INFO - 2017-10-17 14:26:47 --> Utf8 Class Initialized
+INFO - 2017-10-17 14:26:47 --> URI Class Initialized
+INFO - 2017-10-17 14:26:47 --> Router Class Initialized
+INFO - 2017-10-17 14:26:47 --> Output Class Initialized
+INFO - 2017-10-17 14:26:47 --> Security Class Initialized
+DEBUG - 2017-10-17 14:26:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 14:26:47 --> Input Class Initialized
+INFO - 2017-10-17 14:26:47 --> Language Class Initialized
+INFO - 2017-10-17 14:26:47 --> Loader Class Initialized
+DEBUG - 2017-10-17 14:26:47 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 14:26:47 --> Helper loaded: security_helper
+INFO - 2017-10-17 14:26:47 --> Helper loaded: form_helper
+INFO - 2017-10-17 14:26:47 --> Helper loaded: url_helper
+INFO - 2017-10-17 14:26:47 --> Database Driver Class Initialized
+INFO - 2017-10-17 14:26:47 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 14:26:47 --> Pagination Class Initialized
+INFO - 2017-10-17 14:26:47 --> Controller Class Initialized
+INFO - 2017-10-17 14:26:47 --> Model Class Initialized
+INFO - 2017-10-17 14:26:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 14:26:47 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 14:26:47 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 14:26:47 --> Final output sent to browser
+DEBUG - 2017-10-17 14:26:47 --> Total execution time: 0.0429
+INFO - 2017-10-17 14:26:49 --> Config Class Initialized
+INFO - 2017-10-17 14:26:49 --> Hooks Class Initialized
+DEBUG - 2017-10-17 14:26:49 --> UTF-8 Support Enabled
+INFO - 2017-10-17 14:26:49 --> Utf8 Class Initialized
+INFO - 2017-10-17 14:26:49 --> URI Class Initialized
+INFO - 2017-10-17 14:26:49 --> Router Class Initialized
+INFO - 2017-10-17 14:26:49 --> Output Class Initialized
+INFO - 2017-10-17 14:26:49 --> Security Class Initialized
+DEBUG - 2017-10-17 14:26:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 14:26:49 --> Input Class Initialized
+INFO - 2017-10-17 14:26:49 --> Language Class Initialized
+INFO - 2017-10-17 14:26:49 --> Loader Class Initialized
+DEBUG - 2017-10-17 14:26:49 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 14:26:49 --> Helper loaded: security_helper
+INFO - 2017-10-17 14:26:49 --> Helper loaded: form_helper
+INFO - 2017-10-17 14:26:49 --> Helper loaded: url_helper
+INFO - 2017-10-17 14:26:49 --> Database Driver Class Initialized
+INFO - 2017-10-17 14:26:49 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 14:26:49 --> Pagination Class Initialized
+INFO - 2017-10-17 14:26:49 --> Controller Class Initialized
+INFO - 2017-10-17 14:26:49 --> Model Class Initialized
+INFO - 2017-10-17 14:26:49 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 14:26:49 --> Form Validation Class Initialized
+INFO - 2017-10-17 14:26:49 --> Model Class Initialized
+INFO - 2017-10-17 14:26:49 --> Model Class Initialized
+INFO - 2017-10-17 14:26:49 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 14:26:49 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 14:26:49 --> Final output sent to browser
+DEBUG - 2017-10-17 14:26:49 --> Total execution time: 0.0555
+INFO - 2017-10-17 14:26:57 --> Config Class Initialized
+INFO - 2017-10-17 14:26:57 --> Hooks Class Initialized
+DEBUG - 2017-10-17 14:26:57 --> UTF-8 Support Enabled
+INFO - 2017-10-17 14:26:57 --> Utf8 Class Initialized
+INFO - 2017-10-17 14:26:57 --> URI Class Initialized
+INFO - 2017-10-17 14:26:57 --> Router Class Initialized
+INFO - 2017-10-17 14:26:57 --> Output Class Initialized
+INFO - 2017-10-17 14:26:57 --> Security Class Initialized
+DEBUG - 2017-10-17 14:26:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 14:26:57 --> Input Class Initialized
+INFO - 2017-10-17 14:26:57 --> Language Class Initialized
+INFO - 2017-10-17 14:26:57 --> Loader Class Initialized
+DEBUG - 2017-10-17 14:26:57 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 14:26:57 --> Helper loaded: security_helper
+INFO - 2017-10-17 14:26:57 --> Helper loaded: form_helper
+INFO - 2017-10-17 14:26:57 --> Helper loaded: url_helper
+INFO - 2017-10-17 14:26:57 --> Database Driver Class Initialized
+INFO - 2017-10-17 14:26:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 14:26:57 --> Pagination Class Initialized
+INFO - 2017-10-17 14:26:57 --> Controller Class Initialized
+INFO - 2017-10-17 14:26:57 --> Model Class Initialized
+INFO - 2017-10-17 14:26:57 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 14:26:57 --> Form Validation Class Initialized
+INFO - 2017-10-17 14:26:57 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 14:26:57 --> Model Class Initialized
+INFO - 2017-10-17 14:26:57 --> Model Class Initialized
+INFO - 2017-10-17 14:26:57 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 14:26:57 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 14:26:57 --> Final output sent to browser
+DEBUG - 2017-10-17 14:26:57 --> Total execution time: 0.0397
+INFO - 2017-10-17 14:27:45 --> Config Class Initialized
+INFO - 2017-10-17 14:27:45 --> Hooks Class Initialized
+DEBUG - 2017-10-17 14:27:45 --> UTF-8 Support Enabled
+INFO - 2017-10-17 14:27:45 --> Utf8 Class Initialized
+INFO - 2017-10-17 14:27:45 --> URI Class Initialized
+INFO - 2017-10-17 14:27:45 --> Router Class Initialized
+INFO - 2017-10-17 14:27:45 --> Output Class Initialized
+INFO - 2017-10-17 14:27:45 --> Security Class Initialized
+DEBUG - 2017-10-17 14:27:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 14:27:45 --> Input Class Initialized
+INFO - 2017-10-17 14:27:45 --> Language Class Initialized
+INFO - 2017-10-17 14:27:45 --> Loader Class Initialized
+DEBUG - 2017-10-17 14:27:45 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 14:27:45 --> Helper loaded: security_helper
+INFO - 2017-10-17 14:27:45 --> Helper loaded: form_helper
+INFO - 2017-10-17 14:27:45 --> Helper loaded: url_helper
+INFO - 2017-10-17 14:27:45 --> Database Driver Class Initialized
+INFO - 2017-10-17 14:27:45 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 14:27:45 --> Pagination Class Initialized
+INFO - 2017-10-17 14:27:45 --> Controller Class Initialized
+INFO - 2017-10-17 14:27:45 --> Model Class Initialized
+INFO - 2017-10-17 14:27:45 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 14:27:45 --> Form Validation Class Initialized
+INFO - 2017-10-17 14:27:45 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 14:27:45 --> Model Class Initialized
+INFO - 2017-10-17 14:27:45 --> Model Class Initialized
+INFO - 2017-10-17 14:27:45 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 14:27:45 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 14:27:45 --> Final output sent to browser
+DEBUG - 2017-10-17 14:27:45 --> Total execution time: 0.0412
+INFO - 2017-10-17 14:27:47 --> Config Class Initialized
+INFO - 2017-10-17 14:27:47 --> Hooks Class Initialized
+DEBUG - 2017-10-17 14:27:47 --> UTF-8 Support Enabled
+INFO - 2017-10-17 14:27:47 --> Utf8 Class Initialized
+INFO - 2017-10-17 14:27:47 --> URI Class Initialized
+INFO - 2017-10-17 14:27:47 --> Router Class Initialized
+INFO - 2017-10-17 14:27:47 --> Output Class Initialized
+INFO - 2017-10-17 14:27:47 --> Security Class Initialized
+DEBUG - 2017-10-17 14:27:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 14:27:47 --> Input Class Initialized
+INFO - 2017-10-17 14:27:47 --> Language Class Initialized
+INFO - 2017-10-17 14:27:47 --> Loader Class Initialized
+DEBUG - 2017-10-17 14:27:47 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 14:27:47 --> Helper loaded: security_helper
+INFO - 2017-10-17 14:27:47 --> Helper loaded: form_helper
+INFO - 2017-10-17 14:27:47 --> Helper loaded: url_helper
+INFO - 2017-10-17 14:27:47 --> Database Driver Class Initialized
+INFO - 2017-10-17 14:27:47 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 14:27:47 --> Pagination Class Initialized
+INFO - 2017-10-17 14:27:47 --> Controller Class Initialized
+INFO - 2017-10-17 14:27:47 --> Model Class Initialized
+INFO - 2017-10-17 14:27:47 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 14:27:47 --> Form Validation Class Initialized
+INFO - 2017-10-17 14:27:47 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 14:27:47 --> Model Class Initialized
+INFO - 2017-10-17 14:27:47 --> Model Class Initialized
+INFO - 2017-10-17 14:27:47 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 14:27:47 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 14:27:47 --> Final output sent to browser
+DEBUG - 2017-10-17 14:27:47 --> Total execution time: 0.0396
+INFO - 2017-10-17 14:27:57 --> Config Class Initialized
+INFO - 2017-10-17 14:27:57 --> Hooks Class Initialized
+DEBUG - 2017-10-17 14:27:57 --> UTF-8 Support Enabled
+INFO - 2017-10-17 14:27:57 --> Utf8 Class Initialized
+INFO - 2017-10-17 14:27:57 --> URI Class Initialized
+INFO - 2017-10-17 14:27:57 --> Router Class Initialized
+INFO - 2017-10-17 14:27:57 --> Output Class Initialized
+INFO - 2017-10-17 14:27:57 --> Security Class Initialized
+DEBUG - 2017-10-17 14:27:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 14:27:57 --> Input Class Initialized
+INFO - 2017-10-17 14:27:57 --> Language Class Initialized
+INFO - 2017-10-17 14:27:57 --> Loader Class Initialized
+DEBUG - 2017-10-17 14:27:57 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 14:27:57 --> Helper loaded: security_helper
+INFO - 2017-10-17 14:27:57 --> Helper loaded: form_helper
+INFO - 2017-10-17 14:27:57 --> Helper loaded: url_helper
+INFO - 2017-10-17 14:27:57 --> Database Driver Class Initialized
+INFO - 2017-10-17 14:27:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 14:27:57 --> Pagination Class Initialized
+INFO - 2017-10-17 14:27:57 --> Controller Class Initialized
+INFO - 2017-10-17 14:27:57 --> Model Class Initialized
+INFO - 2017-10-17 14:27:57 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 14:27:57 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 14:27:57 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 14:27:57 --> Final output sent to browser
+DEBUG - 2017-10-17 14:27:57 --> Total execution time: 0.0418
+INFO - 2017-10-17 14:27:59 --> Config Class Initialized
+INFO - 2017-10-17 14:27:59 --> Hooks Class Initialized
+DEBUG - 2017-10-17 14:27:59 --> UTF-8 Support Enabled
+INFO - 2017-10-17 14:27:59 --> Utf8 Class Initialized
+INFO - 2017-10-17 14:27:59 --> URI Class Initialized
+INFO - 2017-10-17 14:27:59 --> Router Class Initialized
+INFO - 2017-10-17 14:27:59 --> Output Class Initialized
+INFO - 2017-10-17 14:27:59 --> Security Class Initialized
+DEBUG - 2017-10-17 14:27:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 14:27:59 --> Input Class Initialized
+INFO - 2017-10-17 14:27:59 --> Language Class Initialized
+INFO - 2017-10-17 14:27:59 --> Loader Class Initialized
+DEBUG - 2017-10-17 14:27:59 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 14:27:59 --> Helper loaded: security_helper
+INFO - 2017-10-17 14:27:59 --> Helper loaded: form_helper
+INFO - 2017-10-17 14:27:59 --> Helper loaded: url_helper
+INFO - 2017-10-17 14:27:59 --> Database Driver Class Initialized
+INFO - 2017-10-17 14:27:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 14:27:59 --> Pagination Class Initialized
+INFO - 2017-10-17 14:27:59 --> Controller Class Initialized
+INFO - 2017-10-17 14:27:59 --> Model Class Initialized
+INFO - 2017-10-17 14:27:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 14:27:59 --> Form Validation Class Initialized
+INFO - 2017-10-17 14:27:59 --> Model Class Initialized
+INFO - 2017-10-17 14:27:59 --> Model Class Initialized
+INFO - 2017-10-17 14:27:59 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 14:27:59 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 14:27:59 --> Final output sent to browser
+DEBUG - 2017-10-17 14:27:59 --> Total execution time: 0.0508
+INFO - 2017-10-17 23:48:16 --> Config Class Initialized
+INFO - 2017-10-17 23:48:16 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:48:16 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:48:16 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:48:16 --> URI Class Initialized
+INFO - 2017-10-17 23:48:16 --> Router Class Initialized
+INFO - 2017-10-17 23:48:16 --> Output Class Initialized
+INFO - 2017-10-17 23:48:16 --> Security Class Initialized
+DEBUG - 2017-10-17 23:48:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:48:16 --> Input Class Initialized
+INFO - 2017-10-17 23:48:16 --> Language Class Initialized
+INFO - 2017-10-17 23:48:16 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:48:16 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:48:16 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:48:16 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:48:16 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:48:16 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:48:16 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:48:16 --> Pagination Class Initialized
+INFO - 2017-10-17 23:48:16 --> Controller Class Initialized
+INFO - 2017-10-17 23:48:16 --> Model Class Initialized
+INFO - 2017-10-17 23:48:16 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:48:16 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:48:16 --> Model Class Initialized
+INFO - 2017-10-17 23:48:16 --> Model Class Initialized
+ERROR - 2017-10-17 23:48:16 --> Severity: error --> Exception: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/models/NatalSolidario_model.php exists, but doesn't declare class NatalSolidario_model /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/system/core/Loader.php 336
+ERROR - 2017-10-17 23:48:16 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/models/NatalSolidario_model.php:1) /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/system/core/Common.php 578
+INFO - 2017-10-17 23:49:17 --> Config Class Initialized
+INFO - 2017-10-17 23:49:17 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:49:17 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:49:17 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:49:17 --> URI Class Initialized
+INFO - 2017-10-17 23:49:17 --> Router Class Initialized
+INFO - 2017-10-17 23:49:17 --> Output Class Initialized
+INFO - 2017-10-17 23:49:17 --> Security Class Initialized
+DEBUG - 2017-10-17 23:49:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:49:17 --> Input Class Initialized
+INFO - 2017-10-17 23:49:17 --> Language Class Initialized
+INFO - 2017-10-17 23:49:17 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:49:17 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:49:17 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:49:17 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:49:17 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:49:17 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:49:17 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:49:17 --> Pagination Class Initialized
+INFO - 2017-10-17 23:49:17 --> Controller Class Initialized
+INFO - 2017-10-17 23:49:17 --> Model Class Initialized
+INFO - 2017-10-17 23:49:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:49:17 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:49:17 --> Model Class Initialized
+INFO - 2017-10-17 23:49:17 --> Model Class Initialized
+ERROR - 2017-10-17 23:49:17 --> Severity: error --> Exception: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/models/NatalSolidario_model.php exists, but doesn't declare class NatalSolidario_model /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/system/core/Loader.php 336
+ERROR - 2017-10-17 23:49:17 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/models/NatalSolidario_model.php:1) /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/system/core/Common.php 578
+INFO - 2017-10-17 23:49:49 --> Config Class Initialized
+INFO - 2017-10-17 23:49:49 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:49:49 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:49:49 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:49:49 --> URI Class Initialized
+INFO - 2017-10-17 23:49:49 --> Router Class Initialized
+INFO - 2017-10-17 23:49:49 --> Output Class Initialized
+INFO - 2017-10-17 23:49:49 --> Security Class Initialized
+DEBUG - 2017-10-17 23:49:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:49:49 --> Input Class Initialized
+INFO - 2017-10-17 23:49:49 --> Language Class Initialized
+INFO - 2017-10-17 23:49:49 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:49:49 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:49:49 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:49:49 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:49:49 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:49:49 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:49:49 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:49:49 --> Pagination Class Initialized
+INFO - 2017-10-17 23:49:49 --> Controller Class Initialized
+INFO - 2017-10-17 23:49:49 --> Model Class Initialized
+INFO - 2017-10-17 23:49:49 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:49:49 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:49:49 --> Model Class Initialized
+INFO - 2017-10-17 23:49:49 --> Model Class Initialized
+INFO - 2017-10-17 23:49:49 --> Model Class Initialized
+INFO - 2017-10-17 23:49:49 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:49:49 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:49:49 --> Final output sent to browser
+DEBUG - 2017-10-17 23:49:49 --> Total execution time: 0.0424
+INFO - 2017-10-17 23:52:53 --> Config Class Initialized
+INFO - 2017-10-17 23:52:53 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:52:53 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:52:53 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:52:53 --> URI Class Initialized
+INFO - 2017-10-17 23:52:53 --> Router Class Initialized
+INFO - 2017-10-17 23:52:53 --> Output Class Initialized
+INFO - 2017-10-17 23:52:53 --> Security Class Initialized
+DEBUG - 2017-10-17 23:52:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:52:53 --> Input Class Initialized
+INFO - 2017-10-17 23:52:53 --> Language Class Initialized
+INFO - 2017-10-17 23:52:53 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:52:53 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:52:53 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:52:53 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:52:53 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:52:53 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:52:53 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:52:53 --> Pagination Class Initialized
+INFO - 2017-10-17 23:52:53 --> Controller Class Initialized
+INFO - 2017-10-17 23:52:53 --> Model Class Initialized
+INFO - 2017-10-17 23:52:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:52:53 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:52:53 --> Model Class Initialized
+INFO - 2017-10-17 23:52:53 --> Model Class Initialized
+INFO - 2017-10-17 23:52:53 --> Model Class Initialized
+INFO - 2017-10-17 23:52:53 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:52:53 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:52:53 --> Final output sent to browser
+DEBUG - 2017-10-17 23:52:53 --> Total execution time: 0.0447
+INFO - 2017-10-17 23:52:58 --> Config Class Initialized
+INFO - 2017-10-17 23:52:58 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:52:58 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:52:58 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:52:58 --> URI Class Initialized
+INFO - 2017-10-17 23:52:58 --> Router Class Initialized
+INFO - 2017-10-17 23:52:58 --> Output Class Initialized
+INFO - 2017-10-17 23:52:58 --> Security Class Initialized
+DEBUG - 2017-10-17 23:52:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:52:58 --> Input Class Initialized
+INFO - 2017-10-17 23:52:58 --> Language Class Initialized
+INFO - 2017-10-17 23:52:58 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:52:58 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:52:58 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:52:58 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:52:58 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:52:58 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:52:58 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:52:58 --> Pagination Class Initialized
+INFO - 2017-10-17 23:52:58 --> Controller Class Initialized
+INFO - 2017-10-17 23:52:58 --> Model Class Initialized
+INFO - 2017-10-17 23:52:58 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:52:58 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:52:58 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:52:58 --> Final output sent to browser
+DEBUG - 2017-10-17 23:52:58 --> Total execution time: 0.0301
+INFO - 2017-10-17 23:53:03 --> Config Class Initialized
+INFO - 2017-10-17 23:53:03 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:53:03 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:53:03 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:53:03 --> URI Class Initialized
+INFO - 2017-10-17 23:53:03 --> Router Class Initialized
+INFO - 2017-10-17 23:53:03 --> Output Class Initialized
+INFO - 2017-10-17 23:53:03 --> Security Class Initialized
+DEBUG - 2017-10-17 23:53:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:53:03 --> Input Class Initialized
+INFO - 2017-10-17 23:53:03 --> Language Class Initialized
+INFO - 2017-10-17 23:53:03 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:53:03 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:53:03 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:53:03 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:53:03 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:53:03 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:53:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:53:03 --> Pagination Class Initialized
+INFO - 2017-10-17 23:53:03 --> Controller Class Initialized
+INFO - 2017-10-17 23:53:03 --> Model Class Initialized
+INFO - 2017-10-17 23:53:03 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:53:03 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:53:03 --> Model Class Initialized
+INFO - 2017-10-17 23:53:03 --> Model Class Initialized
+INFO - 2017-10-17 23:53:03 --> Model Class Initialized
+INFO - 2017-10-17 23:53:03 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:53:03 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:53:03 --> Final output sent to browser
+DEBUG - 2017-10-17 23:53:03 --> Total execution time: 0.0350
+INFO - 2017-10-17 23:53:14 --> Config Class Initialized
+INFO - 2017-10-17 23:53:14 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:53:14 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:53:14 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:53:14 --> URI Class Initialized
+INFO - 2017-10-17 23:53:14 --> Router Class Initialized
+INFO - 2017-10-17 23:53:14 --> Output Class Initialized
+INFO - 2017-10-17 23:53:14 --> Security Class Initialized
+DEBUG - 2017-10-17 23:53:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:53:14 --> Input Class Initialized
+INFO - 2017-10-17 23:53:14 --> Language Class Initialized
+INFO - 2017-10-17 23:53:14 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:53:14 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:53:14 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:53:14 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:53:14 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:53:14 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:53:14 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:53:14 --> Pagination Class Initialized
+INFO - 2017-10-17 23:53:14 --> Controller Class Initialized
+INFO - 2017-10-17 23:53:14 --> Model Class Initialized
+INFO - 2017-10-17 23:53:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:53:14 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:53:14 --> Model Class Initialized
+INFO - 2017-10-17 23:53:14 --> Model Class Initialized
+INFO - 2017-10-17 23:53:14 --> Model Class Initialized
+INFO - 2017-10-17 23:53:14 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:53:14 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:53:14 --> Final output sent to browser
+DEBUG - 2017-10-17 23:53:14 --> Total execution time: 0.0393
+INFO - 2017-10-17 23:53:40 --> Config Class Initialized
+INFO - 2017-10-17 23:53:40 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:53:40 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:53:40 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:53:40 --> URI Class Initialized
+INFO - 2017-10-17 23:53:40 --> Router Class Initialized
+INFO - 2017-10-17 23:53:40 --> Output Class Initialized
+INFO - 2017-10-17 23:53:40 --> Security Class Initialized
+DEBUG - 2017-10-17 23:53:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:53:40 --> Input Class Initialized
+INFO - 2017-10-17 23:53:40 --> Language Class Initialized
+INFO - 2017-10-17 23:53:40 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:53:40 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:53:40 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:53:40 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:53:40 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:53:40 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:53:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:53:40 --> Pagination Class Initialized
+INFO - 2017-10-17 23:53:40 --> Controller Class Initialized
+INFO - 2017-10-17 23:53:40 --> Model Class Initialized
+INFO - 2017-10-17 23:53:40 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:53:40 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:53:40 --> Model Class Initialized
+INFO - 2017-10-17 23:53:40 --> Model Class Initialized
+INFO - 2017-10-17 23:53:40 --> Model Class Initialized
+INFO - 2017-10-17 23:53:40 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:53:40 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:53:40 --> Final output sent to browser
+DEBUG - 2017-10-17 23:53:40 --> Total execution time: 0.0432
+INFO - 2017-10-17 23:53:54 --> Config Class Initialized
+INFO - 2017-10-17 23:53:54 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:53:54 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:53:54 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:53:54 --> URI Class Initialized
+INFO - 2017-10-17 23:53:54 --> Router Class Initialized
+INFO - 2017-10-17 23:53:54 --> Output Class Initialized
+INFO - 2017-10-17 23:53:54 --> Security Class Initialized
+DEBUG - 2017-10-17 23:53:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:53:54 --> Input Class Initialized
+INFO - 2017-10-17 23:53:54 --> Language Class Initialized
+INFO - 2017-10-17 23:53:54 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:53:54 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:53:54 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:53:54 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:53:54 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:53:54 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:53:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:53:54 --> Pagination Class Initialized
+INFO - 2017-10-17 23:53:54 --> Controller Class Initialized
+INFO - 2017-10-17 23:53:54 --> Model Class Initialized
+INFO - 2017-10-17 23:53:54 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:53:54 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:53:54 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:53:54 --> Final output sent to browser
+DEBUG - 2017-10-17 23:53:54 --> Total execution time: 0.0321
+INFO - 2017-10-17 23:53:56 --> Config Class Initialized
+INFO - 2017-10-17 23:53:56 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:53:56 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:53:56 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:53:56 --> URI Class Initialized
+INFO - 2017-10-17 23:53:56 --> Router Class Initialized
+INFO - 2017-10-17 23:53:56 --> Output Class Initialized
+INFO - 2017-10-17 23:53:56 --> Security Class Initialized
+DEBUG - 2017-10-17 23:53:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:53:56 --> Input Class Initialized
+INFO - 2017-10-17 23:53:56 --> Language Class Initialized
+INFO - 2017-10-17 23:53:56 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:53:56 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:53:56 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:53:56 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:53:56 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:53:56 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:53:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:53:56 --> Pagination Class Initialized
+INFO - 2017-10-17 23:53:56 --> Controller Class Initialized
+INFO - 2017-10-17 23:53:56 --> Model Class Initialized
+INFO - 2017-10-17 23:53:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:53:56 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:53:56 --> Model Class Initialized
+INFO - 2017-10-17 23:53:56 --> Model Class Initialized
+INFO - 2017-10-17 23:53:56 --> Model Class Initialized
+INFO - 2017-10-17 23:53:56 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:53:56 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:53:56 --> Final output sent to browser
+DEBUG - 2017-10-17 23:53:56 --> Total execution time: 0.0653
+INFO - 2017-10-17 23:54:00 --> Config Class Initialized
+INFO - 2017-10-17 23:54:00 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:00 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:00 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:00 --> URI Class Initialized
+INFO - 2017-10-17 23:54:00 --> Router Class Initialized
+INFO - 2017-10-17 23:54:00 --> Output Class Initialized
+INFO - 2017-10-17 23:54:00 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:00 --> Input Class Initialized
+INFO - 2017-10-17 23:54:00 --> Language Class Initialized
+INFO - 2017-10-17 23:54:00 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:00 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:00 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:00 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:00 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:00 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:00 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:00 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:00 --> Model Class Initialized
+INFO - 2017-10-17 23:54:00 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:00 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:54:00 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:00 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:00 --> Total execution time: 0.0404
+INFO - 2017-10-17 23:54:03 --> Config Class Initialized
+INFO - 2017-10-17 23:54:03 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:03 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:03 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:03 --> URI Class Initialized
+INFO - 2017-10-17 23:54:03 --> Router Class Initialized
+INFO - 2017-10-17 23:54:03 --> Output Class Initialized
+INFO - 2017-10-17 23:54:03 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:03 --> Input Class Initialized
+INFO - 2017-10-17 23:54:03 --> Language Class Initialized
+INFO - 2017-10-17 23:54:03 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:03 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:03 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:03 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:03 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:03 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:03 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:03 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:03 --> Model Class Initialized
+INFO - 2017-10-17 23:54:03 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:03 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:03 --> Model Class Initialized
+INFO - 2017-10-17 23:54:03 --> Model Class Initialized
+INFO - 2017-10-17 23:54:03 --> Model Class Initialized
+INFO - 2017-10-17 23:54:03 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:03 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:03 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:03 --> Total execution time: 0.0343
+INFO - 2017-10-17 23:54:06 --> Config Class Initialized
+INFO - 2017-10-17 23:54:06 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:06 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:06 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:06 --> URI Class Initialized
+INFO - 2017-10-17 23:54:06 --> Router Class Initialized
+INFO - 2017-10-17 23:54:06 --> Output Class Initialized
+INFO - 2017-10-17 23:54:06 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:06 --> Input Class Initialized
+INFO - 2017-10-17 23:54:06 --> Language Class Initialized
+INFO - 2017-10-17 23:54:06 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:06 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:06 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:06 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:06 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:06 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:06 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:06 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:06 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:06 --> Model Class Initialized
+INFO - 2017-10-17 23:54:06 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:06 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:06 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:54:06 --> Model Class Initialized
+INFO - 2017-10-17 23:54:06 --> Model Class Initialized
+INFO - 2017-10-17 23:54:06 --> Model Class Initialized
+INFO - 2017-10-17 23:54:06 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:06 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:06 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:06 --> Total execution time: 0.0352
+INFO - 2017-10-17 23:54:14 --> Config Class Initialized
+INFO - 2017-10-17 23:54:14 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:14 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:14 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:14 --> URI Class Initialized
+INFO - 2017-10-17 23:54:14 --> Router Class Initialized
+INFO - 2017-10-17 23:54:14 --> Output Class Initialized
+INFO - 2017-10-17 23:54:14 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:14 --> Input Class Initialized
+INFO - 2017-10-17 23:54:14 --> Language Class Initialized
+INFO - 2017-10-17 23:54:14 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:14 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:14 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:14 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:14 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:14 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:14 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:14 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:14 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:14 --> Model Class Initialized
+INFO - 2017-10-17 23:54:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:14 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:14 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:54:14 --> Config Class Initialized
+INFO - 2017-10-17 23:54:14 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:14 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:14 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:14 --> URI Class Initialized
+INFO - 2017-10-17 23:54:14 --> Router Class Initialized
+INFO - 2017-10-17 23:54:14 --> Output Class Initialized
+INFO - 2017-10-17 23:54:14 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:14 --> Input Class Initialized
+INFO - 2017-10-17 23:54:14 --> Language Class Initialized
+INFO - 2017-10-17 23:54:14 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:14 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:14 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:14 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:14 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:14 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:14 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:14 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:14 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:14 --> Model Class Initialized
+INFO - 2017-10-17 23:54:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:14 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:54:14 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:14 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:14 --> Total execution time: 0.0395
+INFO - 2017-10-17 23:54:18 --> Config Class Initialized
+INFO - 2017-10-17 23:54:18 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:18 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:18 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:18 --> URI Class Initialized
+INFO - 2017-10-17 23:54:18 --> Router Class Initialized
+INFO - 2017-10-17 23:54:18 --> Output Class Initialized
+INFO - 2017-10-17 23:54:18 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:18 --> Input Class Initialized
+INFO - 2017-10-17 23:54:18 --> Language Class Initialized
+INFO - 2017-10-17 23:54:18 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:18 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:18 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:18 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:18 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:18 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:18 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:18 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:18 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:18 --> Model Class Initialized
+INFO - 2017-10-17 23:54:18 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:18 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:18 --> Model Class Initialized
+INFO - 2017-10-17 23:54:18 --> Model Class Initialized
+INFO - 2017-10-17 23:54:18 --> Model Class Initialized
+INFO - 2017-10-17 23:54:18 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:18 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:18 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:18 --> Total execution time: 0.0353
+INFO - 2017-10-17 23:54:30 --> Config Class Initialized
+INFO - 2017-10-17 23:54:30 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:30 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:30 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:30 --> URI Class Initialized
+INFO - 2017-10-17 23:54:30 --> Router Class Initialized
+INFO - 2017-10-17 23:54:30 --> Output Class Initialized
+INFO - 2017-10-17 23:54:30 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:30 --> Input Class Initialized
+INFO - 2017-10-17 23:54:30 --> Language Class Initialized
+INFO - 2017-10-17 23:54:30 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:30 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:30 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:30 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:30 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:30 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:30 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:30 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:30 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:30 --> Model Class Initialized
+INFO - 2017-10-17 23:54:30 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:30 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:30 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:54:30 --> Config Class Initialized
+INFO - 2017-10-17 23:54:30 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:30 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:30 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:30 --> URI Class Initialized
+INFO - 2017-10-17 23:54:30 --> Router Class Initialized
+INFO - 2017-10-17 23:54:30 --> Output Class Initialized
+INFO - 2017-10-17 23:54:30 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:30 --> Input Class Initialized
+INFO - 2017-10-17 23:54:30 --> Language Class Initialized
+INFO - 2017-10-17 23:54:30 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:30 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:30 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:30 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:30 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:30 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:30 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:30 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:30 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:30 --> Model Class Initialized
+INFO - 2017-10-17 23:54:30 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:30 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:54:30 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:30 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:30 --> Total execution time: 0.0416
+INFO - 2017-10-17 23:54:33 --> Config Class Initialized
+INFO - 2017-10-17 23:54:33 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:33 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:33 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:33 --> URI Class Initialized
+INFO - 2017-10-17 23:54:33 --> Router Class Initialized
+INFO - 2017-10-17 23:54:33 --> Output Class Initialized
+INFO - 2017-10-17 23:54:33 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:33 --> Input Class Initialized
+INFO - 2017-10-17 23:54:33 --> Language Class Initialized
+INFO - 2017-10-17 23:54:33 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:33 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:33 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:33 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:33 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:33 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:33 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:33 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:33 --> Model Class Initialized
+INFO - 2017-10-17 23:54:33 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:33 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:33 --> Model Class Initialized
+INFO - 2017-10-17 23:54:33 --> Model Class Initialized
+INFO - 2017-10-17 23:54:33 --> Model Class Initialized
+INFO - 2017-10-17 23:54:33 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:33 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:33 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:33 --> Total execution time: 0.0380
+INFO - 2017-10-17 23:54:37 --> Config Class Initialized
+INFO - 2017-10-17 23:54:37 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:37 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:37 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:37 --> URI Class Initialized
+INFO - 2017-10-17 23:54:37 --> Router Class Initialized
+INFO - 2017-10-17 23:54:37 --> Output Class Initialized
+INFO - 2017-10-17 23:54:37 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:37 --> Input Class Initialized
+INFO - 2017-10-17 23:54:37 --> Language Class Initialized
+INFO - 2017-10-17 23:54:37 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:37 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:37 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:37 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:37 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:37 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:37 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:37 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:37 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:37 --> Model Class Initialized
+INFO - 2017-10-17 23:54:37 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:37 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:37 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:54:37 --> Config Class Initialized
+INFO - 2017-10-17 23:54:37 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:37 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:37 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:37 --> URI Class Initialized
+INFO - 2017-10-17 23:54:37 --> Router Class Initialized
+INFO - 2017-10-17 23:54:37 --> Output Class Initialized
+INFO - 2017-10-17 23:54:37 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:37 --> Input Class Initialized
+INFO - 2017-10-17 23:54:37 --> Language Class Initialized
+INFO - 2017-10-17 23:54:37 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:37 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:37 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:37 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:37 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:37 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:37 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:37 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:37 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:37 --> Model Class Initialized
+INFO - 2017-10-17 23:54:37 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:37 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:54:37 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:37 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:37 --> Total execution time: 0.0462
+INFO - 2017-10-17 23:54:41 --> Config Class Initialized
+INFO - 2017-10-17 23:54:41 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:41 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:41 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:41 --> URI Class Initialized
+INFO - 2017-10-17 23:54:41 --> Router Class Initialized
+INFO - 2017-10-17 23:54:41 --> Output Class Initialized
+INFO - 2017-10-17 23:54:41 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:41 --> Input Class Initialized
+INFO - 2017-10-17 23:54:41 --> Language Class Initialized
+INFO - 2017-10-17 23:54:41 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:41 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:41 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:41 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:41 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:41 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:41 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:41 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:41 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:41 --> Model Class Initialized
+INFO - 2017-10-17 23:54:41 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:41 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:41 --> Model Class Initialized
+INFO - 2017-10-17 23:54:41 --> Model Class Initialized
+INFO - 2017-10-17 23:54:41 --> Model Class Initialized
+INFO - 2017-10-17 23:54:41 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:41 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:41 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:41 --> Total execution time: 0.0340
+INFO - 2017-10-17 23:54:43 --> Config Class Initialized
+INFO - 2017-10-17 23:54:43 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:43 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:43 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:43 --> URI Class Initialized
+INFO - 2017-10-17 23:54:43 --> Router Class Initialized
+INFO - 2017-10-17 23:54:43 --> Output Class Initialized
+INFO - 2017-10-17 23:54:43 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:43 --> Input Class Initialized
+INFO - 2017-10-17 23:54:43 --> Language Class Initialized
+INFO - 2017-10-17 23:54:43 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:43 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:43 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:43 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:43 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:43 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:43 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:43 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:43 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:43 --> Model Class Initialized
+INFO - 2017-10-17 23:54:43 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:43 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:43 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:54:43 --> Config Class Initialized
+INFO - 2017-10-17 23:54:43 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:43 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:43 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:43 --> URI Class Initialized
+INFO - 2017-10-17 23:54:43 --> Router Class Initialized
+INFO - 2017-10-17 23:54:43 --> Output Class Initialized
+INFO - 2017-10-17 23:54:43 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:43 --> Input Class Initialized
+INFO - 2017-10-17 23:54:43 --> Language Class Initialized
+INFO - 2017-10-17 23:54:43 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:43 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:43 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:43 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:43 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:43 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:43 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:43 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:43 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:43 --> Model Class Initialized
+INFO - 2017-10-17 23:54:43 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:43 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:54:43 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:43 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:43 --> Total execution time: 0.0511
+INFO - 2017-10-17 23:54:45 --> Config Class Initialized
+INFO - 2017-10-17 23:54:45 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:45 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:45 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:45 --> URI Class Initialized
+INFO - 2017-10-17 23:54:45 --> Router Class Initialized
+INFO - 2017-10-17 23:54:45 --> Output Class Initialized
+INFO - 2017-10-17 23:54:45 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:45 --> Input Class Initialized
+INFO - 2017-10-17 23:54:45 --> Language Class Initialized
+INFO - 2017-10-17 23:54:45 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:45 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:45 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:45 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:45 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:45 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:45 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:45 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:45 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:45 --> Model Class Initialized
+INFO - 2017-10-17 23:54:45 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:45 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:45 --> Model Class Initialized
+INFO - 2017-10-17 23:54:45 --> Model Class Initialized
+INFO - 2017-10-17 23:54:45 --> Model Class Initialized
+INFO - 2017-10-17 23:54:45 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:45 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:45 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:45 --> Total execution time: 0.0520
+INFO - 2017-10-17 23:54:46 --> Config Class Initialized
+INFO - 2017-10-17 23:54:46 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:46 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:46 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:46 --> URI Class Initialized
+INFO - 2017-10-17 23:54:46 --> Router Class Initialized
+INFO - 2017-10-17 23:54:46 --> Output Class Initialized
+INFO - 2017-10-17 23:54:46 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:46 --> Input Class Initialized
+INFO - 2017-10-17 23:54:46 --> Language Class Initialized
+INFO - 2017-10-17 23:54:46 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:46 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:46 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:46 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:46 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:46 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:46 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:46 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:46 --> Model Class Initialized
+INFO - 2017-10-17 23:54:46 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:46 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:46 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:54:46 --> Config Class Initialized
+INFO - 2017-10-17 23:54:46 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:46 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:46 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:46 --> URI Class Initialized
+INFO - 2017-10-17 23:54:46 --> Router Class Initialized
+INFO - 2017-10-17 23:54:46 --> Output Class Initialized
+INFO - 2017-10-17 23:54:46 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:46 --> Input Class Initialized
+INFO - 2017-10-17 23:54:46 --> Language Class Initialized
+INFO - 2017-10-17 23:54:46 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:46 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:46 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:46 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:46 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:46 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:46 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:46 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:46 --> Model Class Initialized
+INFO - 2017-10-17 23:54:46 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:46 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:54:46 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:46 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:46 --> Total execution time: 0.0320
+INFO - 2017-10-17 23:54:48 --> Config Class Initialized
+INFO - 2017-10-17 23:54:48 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:48 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:48 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:48 --> URI Class Initialized
+INFO - 2017-10-17 23:54:48 --> Router Class Initialized
+INFO - 2017-10-17 23:54:48 --> Output Class Initialized
+INFO - 2017-10-17 23:54:48 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:48 --> Input Class Initialized
+INFO - 2017-10-17 23:54:48 --> Language Class Initialized
+INFO - 2017-10-17 23:54:48 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:48 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:48 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:48 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:48 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:48 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:48 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:48 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:48 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:48 --> Model Class Initialized
+INFO - 2017-10-17 23:54:48 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:48 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:48 --> Model Class Initialized
+INFO - 2017-10-17 23:54:48 --> Model Class Initialized
+INFO - 2017-10-17 23:54:48 --> Model Class Initialized
+INFO - 2017-10-17 23:54:48 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:48 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:48 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:48 --> Total execution time: 0.0645
+INFO - 2017-10-17 23:54:49 --> Config Class Initialized
+INFO - 2017-10-17 23:54:49 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:49 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:49 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:49 --> URI Class Initialized
+INFO - 2017-10-17 23:54:49 --> Router Class Initialized
+INFO - 2017-10-17 23:54:49 --> Output Class Initialized
+INFO - 2017-10-17 23:54:49 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:49 --> Input Class Initialized
+INFO - 2017-10-17 23:54:49 --> Language Class Initialized
+INFO - 2017-10-17 23:54:49 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:49 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:49 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:49 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:49 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:49 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:49 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:49 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:49 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:49 --> Model Class Initialized
+INFO - 2017-10-17 23:54:49 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:49 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:49 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:54:49 --> Config Class Initialized
+INFO - 2017-10-17 23:54:49 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:49 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:49 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:49 --> URI Class Initialized
+INFO - 2017-10-17 23:54:49 --> Router Class Initialized
+INFO - 2017-10-17 23:54:49 --> Output Class Initialized
+INFO - 2017-10-17 23:54:49 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:49 --> Input Class Initialized
+INFO - 2017-10-17 23:54:49 --> Language Class Initialized
+INFO - 2017-10-17 23:54:49 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:49 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:49 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:49 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:49 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:49 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:49 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:49 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:49 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:49 --> Model Class Initialized
+INFO - 2017-10-17 23:54:49 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:49 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:54:49 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:49 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:49 --> Total execution time: 0.0645
+INFO - 2017-10-17 23:54:51 --> Config Class Initialized
+INFO - 2017-10-17 23:54:51 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:51 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:51 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:51 --> URI Class Initialized
+INFO - 2017-10-17 23:54:51 --> Router Class Initialized
+INFO - 2017-10-17 23:54:51 --> Output Class Initialized
+INFO - 2017-10-17 23:54:51 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:51 --> Input Class Initialized
+INFO - 2017-10-17 23:54:51 --> Language Class Initialized
+INFO - 2017-10-17 23:54:51 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:51 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:51 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:51 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:51 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:51 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:51 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:51 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:51 --> Model Class Initialized
+INFO - 2017-10-17 23:54:51 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:51 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:51 --> Model Class Initialized
+INFO - 2017-10-17 23:54:51 --> Model Class Initialized
+INFO - 2017-10-17 23:54:51 --> Model Class Initialized
+INFO - 2017-10-17 23:54:51 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:51 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:51 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:51 --> Total execution time: 0.0785
+INFO - 2017-10-17 23:54:52 --> Config Class Initialized
+INFO - 2017-10-17 23:54:52 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:52 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:52 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:52 --> URI Class Initialized
+INFO - 2017-10-17 23:54:52 --> Router Class Initialized
+INFO - 2017-10-17 23:54:52 --> Output Class Initialized
+INFO - 2017-10-17 23:54:52 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:52 --> Input Class Initialized
+INFO - 2017-10-17 23:54:52 --> Language Class Initialized
+INFO - 2017-10-17 23:54:52 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:52 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:52 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:52 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:52 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:52 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:52 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:52 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:52 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:52 --> Model Class Initialized
+INFO - 2017-10-17 23:54:52 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:52 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:52 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:54:52 --> Config Class Initialized
+INFO - 2017-10-17 23:54:52 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:52 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:52 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:52 --> URI Class Initialized
+INFO - 2017-10-17 23:54:52 --> Router Class Initialized
+INFO - 2017-10-17 23:54:52 --> Output Class Initialized
+INFO - 2017-10-17 23:54:52 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:52 --> Input Class Initialized
+INFO - 2017-10-17 23:54:52 --> Language Class Initialized
+INFO - 2017-10-17 23:54:52 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:52 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:52 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:52 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:52 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:52 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:52 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:52 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:52 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:52 --> Model Class Initialized
+INFO - 2017-10-17 23:54:52 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:52 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:54:52 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:52 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:52 --> Total execution time: 0.0610
+INFO - 2017-10-17 23:54:53 --> Config Class Initialized
+INFO - 2017-10-17 23:54:53 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:53 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:53 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:53 --> URI Class Initialized
+INFO - 2017-10-17 23:54:53 --> Router Class Initialized
+INFO - 2017-10-17 23:54:53 --> Output Class Initialized
+INFO - 2017-10-17 23:54:53 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:53 --> Input Class Initialized
+INFO - 2017-10-17 23:54:53 --> Language Class Initialized
+INFO - 2017-10-17 23:54:53 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:53 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:53 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:53 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:53 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:53 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:53 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:53 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:53 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:53 --> Model Class Initialized
+INFO - 2017-10-17 23:54:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:53 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:53 --> Model Class Initialized
+INFO - 2017-10-17 23:54:53 --> Model Class Initialized
+INFO - 2017-10-17 23:54:53 --> Model Class Initialized
+INFO - 2017-10-17 23:54:53 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:53 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:53 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:53 --> Total execution time: 0.0332
+INFO - 2017-10-17 23:54:54 --> Config Class Initialized
+INFO - 2017-10-17 23:54:54 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:54 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:54 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:54 --> URI Class Initialized
+INFO - 2017-10-17 23:54:54 --> Router Class Initialized
+INFO - 2017-10-17 23:54:54 --> Output Class Initialized
+INFO - 2017-10-17 23:54:54 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:54 --> Input Class Initialized
+INFO - 2017-10-17 23:54:54 --> Language Class Initialized
+INFO - 2017-10-17 23:54:54 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:54 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:54 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:54 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:54 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:54 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:54 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:54 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:54 --> Model Class Initialized
+INFO - 2017-10-17 23:54:54 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:54 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:54 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:54:54 --> Config Class Initialized
+INFO - 2017-10-17 23:54:54 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:54 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:54 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:54 --> URI Class Initialized
+INFO - 2017-10-17 23:54:54 --> Router Class Initialized
+INFO - 2017-10-17 23:54:54 --> Output Class Initialized
+INFO - 2017-10-17 23:54:54 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:54 --> Input Class Initialized
+INFO - 2017-10-17 23:54:54 --> Language Class Initialized
+INFO - 2017-10-17 23:54:54 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:54 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:54 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:54 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:54 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:54 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:54 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:54 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:54 --> Model Class Initialized
+INFO - 2017-10-17 23:54:54 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:54 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:54:54 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:54 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:54 --> Total execution time: 0.0462
+INFO - 2017-10-17 23:54:55 --> Config Class Initialized
+INFO - 2017-10-17 23:54:55 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:54:55 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:54:55 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:54:55 --> URI Class Initialized
+INFO - 2017-10-17 23:54:55 --> Router Class Initialized
+INFO - 2017-10-17 23:54:55 --> Output Class Initialized
+INFO - 2017-10-17 23:54:55 --> Security Class Initialized
+DEBUG - 2017-10-17 23:54:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:54:55 --> Input Class Initialized
+INFO - 2017-10-17 23:54:55 --> Language Class Initialized
+INFO - 2017-10-17 23:54:55 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:54:55 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:54:55 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:54:55 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:54:55 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:54:55 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:54:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:54:55 --> Pagination Class Initialized
+INFO - 2017-10-17 23:54:55 --> Controller Class Initialized
+INFO - 2017-10-17 23:54:55 --> Model Class Initialized
+INFO - 2017-10-17 23:54:55 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:54:55 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:54:55 --> Model Class Initialized
+INFO - 2017-10-17 23:54:55 --> Model Class Initialized
+INFO - 2017-10-17 23:54:55 --> Model Class Initialized
+INFO - 2017-10-17 23:54:55 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:54:55 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:54:55 --> Final output sent to browser
+DEBUG - 2017-10-17 23:54:55 --> Total execution time: 0.0367
+INFO - 2017-10-17 23:55:08 --> Config Class Initialized
+INFO - 2017-10-17 23:55:08 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:08 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:08 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:08 --> URI Class Initialized
+INFO - 2017-10-17 23:55:08 --> Router Class Initialized
+INFO - 2017-10-17 23:55:08 --> Output Class Initialized
+INFO - 2017-10-17 23:55:08 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:08 --> Input Class Initialized
+INFO - 2017-10-17 23:55:08 --> Language Class Initialized
+INFO - 2017-10-17 23:55:08 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:08 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:08 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:08 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:08 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:08 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:08 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:08 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:08 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:08 --> Model Class Initialized
+INFO - 2017-10-17 23:55:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:08 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:08 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:55:08 --> Config Class Initialized
+INFO - 2017-10-17 23:55:08 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:08 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:08 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:08 --> URI Class Initialized
+INFO - 2017-10-17 23:55:08 --> Router Class Initialized
+INFO - 2017-10-17 23:55:08 --> Output Class Initialized
+INFO - 2017-10-17 23:55:08 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:08 --> Input Class Initialized
+INFO - 2017-10-17 23:55:08 --> Language Class Initialized
+INFO - 2017-10-17 23:55:08 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:08 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:08 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:08 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:08 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:08 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:08 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:08 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:08 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:08 --> Model Class Initialized
+INFO - 2017-10-17 23:55:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:08 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:55:08 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:08 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:08 --> Total execution time: 0.0464
+INFO - 2017-10-17 23:55:10 --> Config Class Initialized
+INFO - 2017-10-17 23:55:10 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:10 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:10 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:10 --> URI Class Initialized
+INFO - 2017-10-17 23:55:10 --> Router Class Initialized
+INFO - 2017-10-17 23:55:10 --> Output Class Initialized
+INFO - 2017-10-17 23:55:10 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:10 --> Input Class Initialized
+INFO - 2017-10-17 23:55:10 --> Language Class Initialized
+INFO - 2017-10-17 23:55:10 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:10 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:10 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:10 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:10 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:10 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:10 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:10 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:10 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:10 --> Model Class Initialized
+INFO - 2017-10-17 23:55:10 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:10 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:10 --> Model Class Initialized
+INFO - 2017-10-17 23:55:10 --> Model Class Initialized
+INFO - 2017-10-17 23:55:10 --> Model Class Initialized
+INFO - 2017-10-17 23:55:10 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:55:10 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:10 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:10 --> Total execution time: 0.0451
+INFO - 2017-10-17 23:55:12 --> Config Class Initialized
+INFO - 2017-10-17 23:55:12 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:12 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:12 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:12 --> URI Class Initialized
+INFO - 2017-10-17 23:55:12 --> Router Class Initialized
+INFO - 2017-10-17 23:55:12 --> Output Class Initialized
+INFO - 2017-10-17 23:55:12 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:12 --> Input Class Initialized
+INFO - 2017-10-17 23:55:12 --> Language Class Initialized
+INFO - 2017-10-17 23:55:12 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:12 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:12 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:12 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:12 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:12 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:12 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:13 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:13 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:13 --> Model Class Initialized
+INFO - 2017-10-17 23:55:13 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:13 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:13 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:55:13 --> Config Class Initialized
+INFO - 2017-10-17 23:55:13 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:13 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:13 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:13 --> URI Class Initialized
+INFO - 2017-10-17 23:55:13 --> Router Class Initialized
+INFO - 2017-10-17 23:55:13 --> Output Class Initialized
+INFO - 2017-10-17 23:55:13 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:13 --> Input Class Initialized
+INFO - 2017-10-17 23:55:13 --> Language Class Initialized
+INFO - 2017-10-17 23:55:13 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:13 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:13 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:13 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:13 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:13 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:13 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:13 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:13 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:13 --> Model Class Initialized
+INFO - 2017-10-17 23:55:13 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:13 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:55:13 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:13 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:13 --> Total execution time: 0.0500
+INFO - 2017-10-17 23:55:14 --> Config Class Initialized
+INFO - 2017-10-17 23:55:14 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:14 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:14 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:14 --> URI Class Initialized
+INFO - 2017-10-17 23:55:14 --> Router Class Initialized
+INFO - 2017-10-17 23:55:14 --> Output Class Initialized
+INFO - 2017-10-17 23:55:14 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:14 --> Input Class Initialized
+INFO - 2017-10-17 23:55:14 --> Language Class Initialized
+INFO - 2017-10-17 23:55:14 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:14 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:14 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:14 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:14 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:14 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:14 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:14 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:14 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:14 --> Model Class Initialized
+INFO - 2017-10-17 23:55:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:14 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:14 --> Model Class Initialized
+INFO - 2017-10-17 23:55:14 --> Model Class Initialized
+INFO - 2017-10-17 23:55:14 --> Model Class Initialized
+INFO - 2017-10-17 23:55:14 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:55:14 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:14 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:14 --> Total execution time: 0.0527
+INFO - 2017-10-17 23:55:16 --> Config Class Initialized
+INFO - 2017-10-17 23:55:16 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:16 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:16 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:16 --> URI Class Initialized
+INFO - 2017-10-17 23:55:16 --> Router Class Initialized
+INFO - 2017-10-17 23:55:16 --> Output Class Initialized
+INFO - 2017-10-17 23:55:16 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:16 --> Input Class Initialized
+INFO - 2017-10-17 23:55:16 --> Language Class Initialized
+INFO - 2017-10-17 23:55:16 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:16 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:16 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:16 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:16 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:16 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:16 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:16 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:16 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:16 --> Model Class Initialized
+INFO - 2017-10-17 23:55:16 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:16 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:16 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:55:16 --> Config Class Initialized
+INFO - 2017-10-17 23:55:16 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:16 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:16 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:16 --> URI Class Initialized
+INFO - 2017-10-17 23:55:16 --> Router Class Initialized
+INFO - 2017-10-17 23:55:16 --> Output Class Initialized
+INFO - 2017-10-17 23:55:16 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:16 --> Input Class Initialized
+INFO - 2017-10-17 23:55:16 --> Language Class Initialized
+INFO - 2017-10-17 23:55:16 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:16 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:16 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:16 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:16 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:16 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:16 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:16 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:16 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:16 --> Model Class Initialized
+INFO - 2017-10-17 23:55:16 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:16 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:55:16 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:16 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:16 --> Total execution time: 0.0717
+INFO - 2017-10-17 23:55:18 --> Config Class Initialized
+INFO - 2017-10-17 23:55:18 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:18 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:18 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:18 --> URI Class Initialized
+INFO - 2017-10-17 23:55:18 --> Router Class Initialized
+INFO - 2017-10-17 23:55:18 --> Output Class Initialized
+INFO - 2017-10-17 23:55:18 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:18 --> Input Class Initialized
+INFO - 2017-10-17 23:55:18 --> Language Class Initialized
+INFO - 2017-10-17 23:55:18 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:18 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:18 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:18 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:18 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:18 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:18 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:18 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:18 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:18 --> Model Class Initialized
+INFO - 2017-10-17 23:55:18 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:18 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:18 --> Model Class Initialized
+INFO - 2017-10-17 23:55:18 --> Model Class Initialized
+INFO - 2017-10-17 23:55:18 --> Model Class Initialized
+INFO - 2017-10-17 23:55:18 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:55:18 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:18 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:18 --> Total execution time: 0.0347
+INFO - 2017-10-17 23:55:20 --> Config Class Initialized
+INFO - 2017-10-17 23:55:20 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:20 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:20 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:20 --> URI Class Initialized
+INFO - 2017-10-17 23:55:20 --> Router Class Initialized
+INFO - 2017-10-17 23:55:20 --> Output Class Initialized
+INFO - 2017-10-17 23:55:20 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:20 --> Input Class Initialized
+INFO - 2017-10-17 23:55:20 --> Language Class Initialized
+INFO - 2017-10-17 23:55:20 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:20 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:20 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:20 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:20 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:20 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:20 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:20 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:20 --> Model Class Initialized
+INFO - 2017-10-17 23:55:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:20 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:20 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:55:20 --> Config Class Initialized
+INFO - 2017-10-17 23:55:20 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:20 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:20 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:20 --> URI Class Initialized
+INFO - 2017-10-17 23:55:20 --> Router Class Initialized
+INFO - 2017-10-17 23:55:20 --> Output Class Initialized
+INFO - 2017-10-17 23:55:20 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:20 --> Input Class Initialized
+INFO - 2017-10-17 23:55:20 --> Language Class Initialized
+INFO - 2017-10-17 23:55:20 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:20 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:20 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:20 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:20 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:20 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:20 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:20 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:20 --> Model Class Initialized
+INFO - 2017-10-17 23:55:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:20 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:55:20 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:20 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:20 --> Total execution time: 0.0337
+INFO - 2017-10-17 23:55:22 --> Config Class Initialized
+INFO - 2017-10-17 23:55:22 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:22 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:22 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:22 --> URI Class Initialized
+INFO - 2017-10-17 23:55:22 --> Router Class Initialized
+INFO - 2017-10-17 23:55:22 --> Output Class Initialized
+INFO - 2017-10-17 23:55:22 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:22 --> Input Class Initialized
+INFO - 2017-10-17 23:55:22 --> Language Class Initialized
+INFO - 2017-10-17 23:55:22 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:22 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:22 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:22 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:22 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:22 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:22 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:22 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:22 --> Model Class Initialized
+INFO - 2017-10-17 23:55:22 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:22 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:22 --> Model Class Initialized
+INFO - 2017-10-17 23:55:22 --> Model Class Initialized
+INFO - 2017-10-17 23:55:22 --> Model Class Initialized
+INFO - 2017-10-17 23:55:22 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/edit.php
+INFO - 2017-10-17 23:55:22 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:22 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:22 --> Total execution time: 0.0340
+INFO - 2017-10-17 23:55:24 --> Config Class Initialized
+INFO - 2017-10-17 23:55:24 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:24 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:24 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:24 --> URI Class Initialized
+INFO - 2017-10-17 23:55:24 --> Router Class Initialized
+INFO - 2017-10-17 23:55:24 --> Output Class Initialized
+INFO - 2017-10-17 23:55:24 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:24 --> Input Class Initialized
+INFO - 2017-10-17 23:55:24 --> Language Class Initialized
+INFO - 2017-10-17 23:55:24 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:24 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:24 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:24 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:24 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:24 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:24 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:24 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:24 --> Model Class Initialized
+INFO - 2017-10-17 23:55:24 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:24 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:24 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:55:24 --> Config Class Initialized
+INFO - 2017-10-17 23:55:24 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:24 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:24 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:24 --> URI Class Initialized
+INFO - 2017-10-17 23:55:24 --> Router Class Initialized
+INFO - 2017-10-17 23:55:24 --> Output Class Initialized
+INFO - 2017-10-17 23:55:24 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:24 --> Input Class Initialized
+INFO - 2017-10-17 23:55:24 --> Language Class Initialized
+INFO - 2017-10-17 23:55:24 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:24 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:24 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:24 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:24 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:24 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:24 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:24 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:24 --> Model Class Initialized
+INFO - 2017-10-17 23:55:24 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:24 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/index.php
+INFO - 2017-10-17 23:55:24 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:24 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:24 --> Total execution time: 0.0623
+INFO - 2017-10-17 23:55:38 --> Config Class Initialized
+INFO - 2017-10-17 23:55:38 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:55:38 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:55:38 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:55:38 --> URI Class Initialized
+INFO - 2017-10-17 23:55:38 --> Router Class Initialized
+INFO - 2017-10-17 23:55:38 --> Output Class Initialized
+INFO - 2017-10-17 23:55:38 --> Security Class Initialized
+DEBUG - 2017-10-17 23:55:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:55:38 --> Input Class Initialized
+INFO - 2017-10-17 23:55:38 --> Language Class Initialized
+INFO - 2017-10-17 23:55:38 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:55:38 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:55:38 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:55:38 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:55:38 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:55:38 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:55:38 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:55:38 --> Pagination Class Initialized
+INFO - 2017-10-17 23:55:38 --> Controller Class Initialized
+INFO - 2017-10-17 23:55:38 --> Model Class Initialized
+INFO - 2017-10-17 23:55:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:55:38 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:55:38 --> Model Class Initialized
+INFO - 2017-10-17 23:55:38 --> Model Class Initialized
+INFO - 2017-10-17 23:55:38 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php
+INFO - 2017-10-17 23:55:38 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:55:38 --> Final output sent to browser
+DEBUG - 2017-10-17 23:55:38 --> Total execution time: 0.0384
+INFO - 2017-10-17 23:57:11 --> Config Class Initialized
+INFO - 2017-10-17 23:57:11 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:57:11 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:57:11 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:57:11 --> URI Class Initialized
+INFO - 2017-10-17 23:57:11 --> Router Class Initialized
+INFO - 2017-10-17 23:57:11 --> Output Class Initialized
+INFO - 2017-10-17 23:57:11 --> Security Class Initialized
+DEBUG - 2017-10-17 23:57:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:57:11 --> Input Class Initialized
+INFO - 2017-10-17 23:57:11 --> Language Class Initialized
+INFO - 2017-10-17 23:57:11 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:57:11 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:57:11 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:57:11 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:57:11 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:57:11 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:57:11 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:57:11 --> Pagination Class Initialized
+INFO - 2017-10-17 23:57:11 --> Controller Class Initialized
+INFO - 2017-10-17 23:57:11 --> Model Class Initialized
+INFO - 2017-10-17 23:57:11 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:57:11 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:57:11 --> Model Class Initialized
+INFO - 2017-10-17 23:57:11 --> Model Class Initialized
+ERROR - 2017-10-17 23:57:11 --> Severity: Notice --> Undefined variable: all_regioes /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 80
+ERROR - 2017-10-17 23:57:11 --> Severity: Warning --> Invalid argument supplied for foreach() /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 80
+INFO - 2017-10-17 23:57:11 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php
+INFO - 2017-10-17 23:57:11 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:57:11 --> Final output sent to browser
+DEBUG - 2017-10-17 23:57:11 --> Total execution time: 0.0357
+INFO - 2017-10-17 23:57:14 --> Config Class Initialized
+INFO - 2017-10-17 23:57:14 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:57:14 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:57:14 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:57:14 --> URI Class Initialized
+INFO - 2017-10-17 23:57:14 --> Router Class Initialized
+INFO - 2017-10-17 23:57:14 --> Output Class Initialized
+INFO - 2017-10-17 23:57:14 --> Security Class Initialized
+DEBUG - 2017-10-17 23:57:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:57:14 --> Input Class Initialized
+INFO - 2017-10-17 23:57:14 --> Language Class Initialized
+INFO - 2017-10-17 23:57:14 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:57:14 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:57:14 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:57:14 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:57:14 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:57:14 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:57:14 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:57:14 --> Pagination Class Initialized
+INFO - 2017-10-17 23:57:14 --> Controller Class Initialized
+INFO - 2017-10-17 23:57:14 --> Model Class Initialized
+INFO - 2017-10-17 23:57:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:57:14 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:57:14 --> Model Class Initialized
+INFO - 2017-10-17 23:57:14 --> Model Class Initialized
+ERROR - 2017-10-17 23:57:14 --> Severity: Notice --> Undefined variable: all_regioes /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 80
+ERROR - 2017-10-17 23:57:14 --> Severity: Warning --> Invalid argument supplied for foreach() /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 80
+INFO - 2017-10-17 23:57:14 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php
+INFO - 2017-10-17 23:57:14 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:57:14 --> Final output sent to browser
+DEBUG - 2017-10-17 23:57:14 --> Total execution time: 0.0328
+INFO - 2017-10-17 23:57:59 --> Config Class Initialized
+INFO - 2017-10-17 23:57:59 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:57:59 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:57:59 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:57:59 --> URI Class Initialized
+INFO - 2017-10-17 23:57:59 --> Router Class Initialized
+INFO - 2017-10-17 23:57:59 --> Output Class Initialized
+INFO - 2017-10-17 23:57:59 --> Security Class Initialized
+DEBUG - 2017-10-17 23:57:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:57:59 --> Input Class Initialized
+INFO - 2017-10-17 23:57:59 --> Language Class Initialized
+INFO - 2017-10-17 23:57:59 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:57:59 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:57:59 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:57:59 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:57:59 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:57:59 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:57:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:57:59 --> Pagination Class Initialized
+INFO - 2017-10-17 23:57:59 --> Controller Class Initialized
+INFO - 2017-10-17 23:57:59 --> Model Class Initialized
+INFO - 2017-10-17 23:57:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:57:59 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:57:59 --> Model Class Initialized
+INFO - 2017-10-17 23:57:59 --> Model Class Initialized
+INFO - 2017-10-17 23:57:59 --> Model Class Initialized
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:57:59 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+INFO - 2017-10-17 23:57:59 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php
+INFO - 2017-10-17 23:57:59 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:57:59 --> Final output sent to browser
+DEBUG - 2017-10-17 23:57:59 --> Total execution time: 0.0483
+INFO - 2017-10-17 23:58:05 --> Config Class Initialized
+INFO - 2017-10-17 23:58:05 --> Hooks Class Initialized
+DEBUG - 2017-10-17 23:58:05 --> UTF-8 Support Enabled
+INFO - 2017-10-17 23:58:05 --> Utf8 Class Initialized
+INFO - 2017-10-17 23:58:05 --> URI Class Initialized
+INFO - 2017-10-17 23:58:05 --> Router Class Initialized
+INFO - 2017-10-17 23:58:05 --> Output Class Initialized
+INFO - 2017-10-17 23:58:05 --> Security Class Initialized
+DEBUG - 2017-10-17 23:58:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-10-17 23:58:05 --> Input Class Initialized
+INFO - 2017-10-17 23:58:05 --> Language Class Initialized
+INFO - 2017-10-17 23:58:05 --> Loader Class Initialized
+DEBUG - 2017-10-17 23:58:05 --> Config file loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/config/pagination.php
+INFO - 2017-10-17 23:58:05 --> Helper loaded: security_helper
+INFO - 2017-10-17 23:58:05 --> Helper loaded: form_helper
+INFO - 2017-10-17 23:58:05 --> Helper loaded: url_helper
+INFO - 2017-10-17 23:58:05 --> Database Driver Class Initialized
+INFO - 2017-10-17 23:58:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-10-17 23:58:05 --> Pagination Class Initialized
+INFO - 2017-10-17 23:58:05 --> Controller Class Initialized
+INFO - 2017-10-17 23:58:05 --> Model Class Initialized
+INFO - 2017-10-17 23:58:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-10-17 23:58:05 --> Form Validation Class Initialized
+INFO - 2017-10-17 23:58:05 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-10-17 23:58:05 --> Model Class Initialized
+INFO - 2017-10-17 23:58:05 --> Model Class Initialized
+INFO - 2017-10-17 23:58:05 --> Model Class Initialized
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+ERROR - 2017-10-17 23:58:05 --> Severity: Notice --> Undefined variable: carta_pedido /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php 82
+INFO - 2017-10-17 23:58:05 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/carta/add.php
+INFO - 2017-10-17 23:58:05 --> File loaded: /Users/joaopaulo/Projetos/03-NatalSolidario/natal-solidario-novo/application/views/layouts/main.php
+INFO - 2017-10-17 23:58:05 --> Final output sent to browser
+DEBUG - 2017-10-17 23:58:05 --> Total execution time: 0.0493
