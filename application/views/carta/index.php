@@ -1,6 +1,7 @@
 <?php if($this->session->flashdata('numero_carta_criada')): ?>
     <div class="alert alert-success" role="alert">
         <strong>Carta <?php echo $this->session->flashdata('numero_carta_criada'); ?> inserida com sucesso!</strong>
+        <!-- <?php echo $this->session->flashdata('teste'); ?> -->
         <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -34,7 +35,17 @@
                         <td><?php echo $c['carteiro_nome']; ?></td>
                         <td><?php echo date("d/m/Y", strtotime($c['data_cadastro'])); ?></td>
 						<td>
-                            <a href="<?php echo site_url('carta/edit/'.$c['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Editar</a> 
+                            <?php 
+                            if($this->session->userdata('grupos_usuario'))
+                                $grupos_usuario = $this->session->userdata('grupos_usuario');
+                                //echo print_r($grupos_usuario);
+                                if (in_array("admin", $grupos_usuario, true) || in_array("representante-ong", $grupos_usuario, true)):
+                            ?>
+                                <a href="<?php echo site_url('carta/edit/'.$c['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Editar</a> 
+                            <?php 
+                                
+                             endif;
+                            ?>
                         </td>
                     </tr>
                     <?php } ?>

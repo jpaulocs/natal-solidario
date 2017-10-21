@@ -36,7 +36,7 @@
 				</div>
 				<div class="row clearfix">
 					<div class="col-md-6">
-						<label for="representante_comunidade" class="control-label">Representante da Comunidade</label>
+						<label for="representante_comunidade" class="control-label"><span class="text-danger">*</span>Representante da Comunidade</label>
 						<div class="form-group">
 							<select name="representante_comunidade" class="form-control">
 								<option value=""></option>
@@ -54,7 +54,7 @@
 				</div>
 				<div class="row clearfix">
 					<div class="col-md-6">
-						<label for="carteiro_associado" class="control-label">Carteiro</label>
+						<label for="carteiro_associado" class="control-label"><span class="text-danger">*</span>Carteiro</label>
 						<div class="form-group">
 							<select name="carteiro_associado" class="form-control">
 								<option value=""></option>
@@ -67,6 +67,7 @@
 								} 
 								?>
 							</select>
+							<span class="text-danger"><?php echo form_error('carteiro_associado');?></span>
 						</div>
 					</div>
 				</div>
@@ -90,6 +91,39 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="row clearfix">
+					<div class="box-header with-border">
+	              		<h3 class="box-title">Checklist</h3>
+	            	</div>
+
+					<div class="col-md-6">
+						
+						<div class="checkbox">
+					      <label><input type="checkbox" value="1" name="checklist_carta" <?php echo ($checklist['carta'] == 1) ? ' checked' : "";?> />Carta</label>
+					    </div>
+						<div class="checkbox">
+					      <label><input type="checkbox" value="2" name="checklist_form_social" <?php echo ($checklist['formularo_social'] == 1) ? ' checked' : "";?>  />Formulário Social</label>
+					    </div>
+					    <div class="checkbox">
+					      <label><input type="checkbox" value="3" name="checklist_doc_id_responsaveis"  <?php echo ($checklist['doc_identidade_responsaveis'] == 1) ? ' checked' : "";?> />Cópia do documento de identificação dos responsáveis</label>
+					    </div>
+					    <div class="checkbox">
+					      <label><input type="checkbox" value="4" name="checklist_cert_nasc_crianca"  <?php echo ($checklist['certidao_nascimeno_crianca'] == 1) ? ' checked' : "";?> />Cópia da certidão de nascimento da criança</label>
+					    </div>
+					    <div class="checkbox">
+					      <label><input type="checkbox" value="5" name="checklist_doc_bolsa_familia"  <?php echo ($checklist['doc_bolsa_familia'] == 1) ? ' checked' : "";?> />Cópia do documento de Bolsa Família</label>
+					    </div>
+					    <div class="checkbox">
+					      <label><input type="checkbox" value="6" name="checklist_comp_escolar"  <?php echo ($checklist['comprovante_escolar'] == 1) ? ' checked' : "";?> />Cópia do comprovante escolar</label>
+					    </div>
+					    <div class="checkbox">
+					      <label><input type="checkbox" value="7" name="checklist_doc_pne"  <?php echo ($checklist['doc_pne'] == 1) ? ' checked' : "";?> />Cópia do documento de PNE, se for o caso</label>
+					    </div>
+					</div>
+
+				</div>
+			</div>
 			</div>
 			<div class="box-footer">
             	<button type="submit" class="btn btn-success">
