@@ -92,7 +92,7 @@
                         <li class="header">MENU</li>
                         <li>
                             <a href="<?php echo site_url();?>">
-                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                                <i class="fa fa-dashboard"></i> <span>Painel</span>
                             </a>
                         </li>
                         <li>
