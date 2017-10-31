@@ -251,6 +251,7 @@ class Carta extends CI_Controller{
         if ($data['beneficiado']['data_nascimento'] != null) {
             $data['beneficiado']['data_nascimento'] = date("d-m-Y", strtotime($data['beneficiado']['data_nascimento']));
         }
+        //log_message('info',print_r('PAIS_SEPARADOS:' . $data['beneficiado']['pais_separados'], TRUE));
         
         $this->load->model('Responsavel_model');
         $data['responsavel']  = $this->Responsavel_model->get_responsavel($data['beneficiado']['responsavel']);
@@ -360,7 +361,7 @@ class Carta extends CI_Controller{
                     'endereco' => $this->input->post('responsavel1Endereco'),
                     'telefone' => preg_replace("/[^0-9,.]/", "", $this->input->post('responsavel1Telefone') ),
                     'telefone_operadora' => $this->input->post('responsavel1TelefoneOperadora'),
-                    'telefone_whatsapp' => $this->input->post('responsavel1TelefoneWhatsapp'),
+                    'telefone_whatsapp' => ($this->input->post('responsavel1TelefoneWhatsapp')) ? true : false,
                     'ocupacao' => $this->input->post('responsavel1Ocupacao'),
                     'escolaridade' => $this->input->post('responsavel1Escolaridade'),
                 );
@@ -384,7 +385,7 @@ class Carta extends CI_Controller{
                         'endereco' => $this->input->post('responsavel2Endereco'),
                         'telefone' => preg_replace("/[^0-9,.]/", "", $this->input->post('responsavel2Telefone') ),
                         'telefone_operadora' => $this->input->post('responsavel2TelefoneOperadora'),
-                        'telefone_whatsapp' => $this->input->post('responsavel2TelefoneWhatsapp'),
+                        'telefone_whatsapp' => ($this->input->post('responsavel2TelefoneWhatsapp')) ? true : false,
                         'ocupacao' => $this->input->post('responsavel2Ocupacao'),
                         'escolaridade' => $this->input->post('responsavel2Escolaridade'),
                     );
@@ -401,12 +402,16 @@ class Carta extends CI_Controller{
                 
                 $dataNascimentoBeneficiado = strtr($this->input->post('dataNascimento'), '/', '-');
                 
+                //log_message('info',print_r('==========================================', TRUE));
+                //log_message('info',print_r('pais separados:'.$this->input->post('paisSeparados'), TRUE));
+                //log_message('info',print_r('==========================================', TRUE));
+                
                 $params = array(
                     'nome' => $this->input->post('nome'),
                     'data_nascimento' => date('Y-m-d', strtotime($dataNascimentoBeneficiado)),
                     'sexo' => $this->input->post('sexo'),
                     'responsavel_adicional' => $idResponsavelAdicional,
-                    'pais_separados' => $this->input->post('paisSeparados'),
+                    'pais_separados' => ($this->input->post('paisSeparados')) ? true : false,
                 );
                 $this->Beneficiado_model->update_beneficiado($data['beneficiado']['id'],$params);
                 

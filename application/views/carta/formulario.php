@@ -44,8 +44,7 @@
         							<select name="regiao_administrativa" class="form-control">
         								<option value=""></option>
         								<?php 
-        									foreach($all_regioes as $regiao_administrativa)
-        									{
+        									foreach($all_regioes as $regiao_administrativa) {
         										$selected = ($regiao_administrativa['id'] == $carta_pedido['regiao_administrativa']) ? ' selected="selected"' : "";
         
         										echo '<option value="'.$regiao_administrativa['id'].'" '.$selected.'>'.$regiao_administrativa['nome'].'</option>';
@@ -298,7 +297,8 @@
         					<div class="col-md-4">
         						<label for="responsavel1" class="control-label">Whatsapp:</label>
         						<div class="form-group">
-        							<input type="checkbox" name="responsavel1TelefoneWhatsapp" value="1" <?php echo ($responsavel['telefone_whatsapp']) ? 'checked':''; ?>/><label style="margin-left:5px;">Sim</label>
+        							<input type="radio" name="responsavel1TelefoneWhatsapp" value="1" <?php echo ($responsavel['telefone_whatsapp']) ? 'checked':''; ?>/><label style="margin-left:5px;">Sim</label>
+        							<input type="radio" name="responsavel1TelefoneWhatsapp" value="0" <?php echo (!$responsavel['telefone_whatsapp']) ? 'checked':''; ?>/><label style="margin-left:5px;">Não</label>
         						</div>
         					</div>
         				</div>
@@ -403,7 +403,8 @@
         					<div class="col-md-4">
         						<label for="responsavel2" class="control-label">Whatsapp:</label>
         						<div class="form-group">
-        							<input type="checkbox" name="responsavel2TelefoneWhatsapp" value="1" <?php echo ($responsavel_adicional['telefone_whatsapp']) ? 'checked':''; ?>/><label style="margin-left:5px;">Sim</label>
+        							<input type="radio" name="responsavel2TelefoneWhatsapp" value="1" <?php echo ($responsavel_adicional['telefone_whatsapp']) ? 'checked':''; ?>/><label style="margin-left:5px;">Sim</label>
+        							<input type="radio" name="responsavel2TelefoneWhatsapp" value="0" <?php echo (!$responsavel_adicional['telefone_whatsapp']) ? 'checked':''; ?>/><label style="margin-left:5px;">Não</label>
         						</div>
         					</div>
         				</div>
@@ -454,7 +455,8 @@
         					<div class="col-md-4">
         						<label for="responsavel2" class="control-label">Pais separados?</label>
         						<div class="form-group">
-        							<input type="checkbox" name="paisSeparados" value="1" <?php echo ($beneficiado['pais_separados']) ? 'checked':''; ?>/>Sim
+        							<input type="radio" name="paisSeparados" value="1" <?php echo ($beneficiado['pais_separados']) ? 'checked':''; ?>/>Sim
+        							<input type="radio" name="paisSeparados" value="0" <?php echo (!$beneficiado['pais_separados']) ? 'checked':''; ?>/>Não
         						</div>
         					</div>
         				</div>
