@@ -10,4 +10,5 @@ $(document).ready(function() {
 		$('.has-datepicker').datetimepicker({format: 'DD/MM/YYYY'});
 	} 
 
+	$(".phones").mask('(00) 00000-0000');
 });

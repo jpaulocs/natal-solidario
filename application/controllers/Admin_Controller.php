@@ -21,6 +21,7 @@ class Admin_Controller extends CI_Controller {
         } else {
             $user = $this->ion_auth->user()->row();
             $this->session->set_userdata('usuario_logado', $user->email);
+            $this->session->set_userdata('usuario_logado_id', $user->id);
             
         }
         

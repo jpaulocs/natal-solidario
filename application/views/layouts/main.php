@@ -194,6 +194,7 @@
         <!-- DatePicker -->
         <script src="<?php echo site_url('resources/js/moment.js');?>"></script>
         <script src="<?php echo site_url('resources/js/bootstrap-datetimepicker.min.js');?>"></script>
+        <script src="<?php echo site_url('resources/js/jquery.mask.min.js');?>"></script>
         <script src="<?php echo site_url('resources/js/global.js');?>"></script>
     </body>
 </html>
