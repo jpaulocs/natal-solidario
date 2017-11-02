@@ -21,6 +21,7 @@ class Carta extends CI_Controller{
 
         $this->load->add_package_path(APPPATH.'third_party/ion_auth/');
         $this->load->library('ion_auth');
+        $this->load->library('pagination');
 
         if (!$this->ion_auth->logged_in())
         {
@@ -47,17 +48,80 @@ class Carta extends CI_Controller{
      */
     function index()
     {
+        $total_records = 0;
+        $limit_per_page = 50;
+        $start_index = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+        $data['carteiro_selecionado']   = $this->input->get('carteiro');
+        $data['regiao_administrativa']  = $this->input->get('regiao_administrativa');
+        $data['numero']                 = $this->input->get('numero');
+        
+        log_message('info',print_r('CARTEIRO_SELECIONADO:' . $data['carteiro_selecionado'], TRUE));
+        log_message('info',print_r('REGIAO:' . $data['regiao_administrativa'], TRUE));
+        log_message('info',print_r('NUMERO:' . $data['numero'], TRUE));
+        
         $data['cartas'] = null;
-        if ($this->input->post('carteiro') != null) {
-            $data['cartas'] = $this->Carta_model->get_cartas_por_carteiro($this->input->post('carteiro'));
-            $data['carteiro_selecionado'] = $this->input->post('carteiro');
+        if ($data['carteiro_selecionado'] != null
+            || strlen($data['numero']) > 0
+            || $data['regiao_administrativa'] != null) {
+            
+            $total_records = $this->Carta_model->contar_cartas_por_parametros($data['numero']
+                , $data['carteiro_selecionado'], $data['regiao_administrativa']);
+            
+            $data['cartas'] = null;
+            if ($total_records > 0) {
+                $data['cartas'] = $this->Carta_model->get_cartas_por_parametros($limit_per_page, $start_index, $data['numero']
+                    , $data['carteiro_selecionado'], $data['regiao_administrativa']);
+            }
         } else {
-            $data['cartas'] = $this->Carta_model->get_all_cartas();
+            
+            $total_records = $this->Carta_model->contar_todas_cartas();
+            $data['cartas'] = null;
+            if ($total_records > 0) {
+                $data['cartas'] = $this->Carta_model->get_all_cartas($limit_per_page, $start_index);
+            }
         }
+        $data['total_registros'] = $total_records;
         
         $this->load->model('Usuario_model');
         $data['carteiros'] = $this->Usuario_model->get_all_usuarios_by_perfil(self::GRUPO_CARTEIROS);
         
+        $this->load->model('NatalSolidario_model');
+        $data['all_regioes'] = $this->NatalSolidario_model->get_all_regiao_administrativa();
+        
+        $config['enable_query_strings'] = TRUE;
+        $config['reuse_query_string'] = TRUE;
+        
+        $config['first_link'] = 'Primeiro';
+        $config['first_tag_open'] = '<li>';
+        $config['first_tag_close'] = '</li>';
+        
+        $config['last_link'] = 'Último';
+        $config['last_tag_open'] = '<li>';
+        $config['last_tag_close'] = '</li>';
+        
+        $config['next_tag_open'] = '<li>';
+        $config['next_tag_close'] = '</li>';
+        
+        $config['prev_tag_open'] = '<li>';
+        $config['prev_tag_close'] = '</li>';
+        
+        $config['num_tag_open'] = '<li>';
+        $config['num_tag_close'] = '</li>';
+        
+        $config['cur_tag_open'] = '<li class="active"><a>';
+        $config['cur_tag_close'] = '</a></li>';
+        
+        
+        $config['base_url'] = base_url() . 'carta/index';
+        $config['total_rows'] = $total_records;
+        $config['per_page'] = $limit_per_page;
+        $config["uri_segment"] = 3;
+        
+        $this->pagination->initialize($config);
+        
+        $data["links"] = $this->pagination->create_links();
+                
         $data['_view'] = 'carta/index';
         $this->load->view('layouts/main',$data);
     }
@@ -552,7 +616,75 @@ class Carta extends CI_Controller{
                 $this->load->view('layouts/main',$data);
             }
         }
-        else
+        else {
             show_error('The carta_pedido you are trying to edit does not exist.');
+        }
+    }
+    
+    function adotante($id) {
+        if(isset($id)) {
+            
+            $this->load->model('Carta_model');
+            $data['carta_pedido'] = $this->Carta_model->get_carta_pedido($id);
+            
+            $this->load->model('Beneficiado_model');
+            $data['beneficiado'] = $this->Beneficiado_model->get_beneficiado($data['carta_pedido']['beneficiado']);
+            
+            $this->load->model('Adotante_model');
+            $data['adotante'] = null;
+            if ($data['carta_pedido']['adotante']) {
+                $data['adotante'] = $this->Adotante_model->get_adotante_por_id($data['carta_pedido']['adotante']);
+            }
+            
+            if($this->input->post('acao') === 'save') {
+                 
+                $this->load->library('form_validation');
+                
+                $this->form_validation->set_rules('nome','Nome','required|max_length[300]');
+                $this->form_validation->set_rules('celular','Celular','required');
+                $this->form_validation->set_rules('email','E-mail pessoal','required|max_length[300]');
+                
+                if($this->form_validation->run()) {
+                    
+                    $email = trim($this->input->post('email'));
+                    $adotante = $this->Adotante_model->get_adotante_por_email($email);
+                    //log_message('info',print_r('ADOT ' . $adotante, TRUE));
+                    
+                    $params['nome'] = $this->input->post('nome');
+                    $params['email'] = $this->input->post('email');
+                    $params['telefone'] = preg_replace("/[^0-9,.]/", "", $this->input->post('celular'));
+                    $params['local_trabalho'] = $this->input->post('local_trabalho');
+                    $params['telefone_trabalho'] = preg_replace("/[^0-9,.]/", "", $this->input->post('telefone_trabalho'));
+                    
+                    $token = $data['carta_pedido']['token_acesso'];
+                    
+                    if ($adotante) {
+                        $this->Adotante_model->update_adotante($adotante['id'], $params);
+                        $adotante_id = $adotante['id'];
+                    } else {
+                        $params['data_cadastro'] = date('Y-m-d H:i:s');
+                        $params['mobilizador'] = $this->session->userdata('usuario_logado_id');
+                        $adotante_id = $this->Adotante_model->add_adotante($params);
+                        
+                        $this->load->helper('random_helper');
+                        $token = gerarToken(20);
+                    }
+                    
+                    $params = array(
+                        'adotante' => $adotante_id,
+                        'token_acesso' => $token,
+                    );
+                    $this->Carta_model->update_carta_pedido($id,$params);
+                    
+                    //log_message('info',print_r('UPDATE CARTA', TRUE));
+                    
+                    redirect('carta/index');
+                }
+            }
+            $data['_view'] = 'carta/adotante';
+            $this->load->view('layouts/main',$data);
+        } else {
+            redirect('carta/index');
+        }
     }
 }

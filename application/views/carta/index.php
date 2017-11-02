@@ -9,7 +9,7 @@
 <?php endif; ?>
 
 <div class="row">
-	<?php echo form_open('carta/index', 'id="myform"'); ?>
+	<?php echo form_open('carta/index', array('method'=>'get','id'=>'myform')); ?>
     <div class="col-md-12">
         <div class="box">
             <div class="box-header">
@@ -19,23 +19,55 @@
                 </div>
             </div>
             <div class="box-body">
-            	<div class="col-md-6">
-                	<label>Filtrar por carteiro</label>
+            	<div  class="panel panel-primary">
+					<div class="panel-heading">Filtrar</div>
+					<div class="panel-body">
+						<div class="row clearfix">
+                        	<div class="col-md-6">
+                            	<label>Número da carta</label>
+                                <input type="text" name="numero" value="<?php echo $numero;?>" class="form-control" onblur="myform.submit();" />
+                			</div>
+                        	<div class="col-md-6">
+                            	<label>Carteiro</label>
+                                <select name="carteiro" class="form-control" onchange="myform.submit();">
+                    				<option value="">selecione</option>
+                    				<?php 
+                    				foreach($carteiros as $carteiro) {
+                    				    $selected = ($carteiro['id'] == ''.$carteiro_selecionado) ? ' selected="selected"' : '';
                     
-                    <select name="carteiro" class="form-control" onchange="myform.submit();">
-        				<option value="">selecione</option>
-        				<?php 
-        				foreach($carteiros as $carteiro)
-        				{
-        				    $selected = ($carteiro['id'] == $carteiro_selecionado) ? ' selected="selected"' : "";
-        
-        					echo '<option value="'.$carteiro['id'].'" '.$selected.'>'.$carteiro['first_name'].'</option>';
-        				} 
-        				?>
-        			</select>
-    			</div>
+                    					echo '<option value="'.$carteiro['id'].'" '.$selected.'>'.$carteiro['first_name'].'</option>';
+                    				} 
+                    				?>
+                    			</select>
+                			</div>
+                		</div>
+                		<div class="row clearfix">
+                			<div class="col-md-6">
+                            	<label>Região administrativa </label>
+                                <select name="regiao_administrativa" class="form-control" onchange="myform.submit();">
+                    				<option value="">selecione</option>
+                    				<?php 
+                    				foreach($all_regioes as $ra) {
+                    				    $selected = ($ra['id'] == ''.$regiao_administrativa) ? ' selected' : '';
+                    				    
+                    				    echo '<option value="'.$ra['id'].'" '.$selected.'>'.$ra['nome'].'</option>';
+                    				}
+                    				?>
+                    			</select>
+                			</div>
+                		</div>
+                	</div>
+                </div>
             </div>
             <div class="box-body">
+            	<div style="font-weight: bold;">Total de cartas encontradas: <?php echo $total_registros;?></div>
+            	<nav aria-label="Page navigation">
+  					<ul class="pagination">
+                <?php if (isset($links)) { ?>
+                	<?php echo $links ?>
+            	<?php } ?>
+            		</ul>
+				</nav>
                 <table class="table table-striped">
                     <tr>
 						<th>Número</th>
@@ -45,7 +77,10 @@
                         <th>Data Cadastro</th>
                         <th>Ação</th>
                     </tr>
-                    <?php foreach($cartas as $c){ ?>
+                    <?php
+                    if($cartas) {
+                    foreach($cartas as $c){ 
+                    ?>
                     <tr>
 						<td><?php echo $c['numero']; ?></td>
                         <td><?php echo $c['beneficiado_nome']; ?></td>
@@ -72,12 +107,26 @@
                             <?php 
                                 
                              endif;
+                             
+                             if (in_array("admin", $grupos_usuario, true) || in_array("mobilizador", $grupos_usuario, true)) {
+                             ?>
+                            	<a href="<?php echo site_url('carta/adotante/'.$c['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Adotante</a>
+                            <?php
+                             }
                             ?>
+                            
                         </td>
                     </tr>
-                    <?php } ?>
+                    <?php }
+                    } ?>
                 </table>
-                                
+                <nav aria-label="Page navigation">
+  					<ul class="pagination">
+                <?php if (isset($links)) { ?>
+                	<?php echo $links ?>
+            	<?php } ?>
+            		</ul>
+				</nav>
             </div>
         </div>
     </div>

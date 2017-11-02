@@ -200,7 +200,7 @@
         						<label for="numero" class="control-label">3ª opção:</label>
         						<div class="form-group">
         							<input type="text" name="brinquedo3" value="<?php echo (array_key_exists(2,$brinquedos)) ? $brinquedos[2]['descricao'] : ""; ?>" class="form-control"/>
-        							<input type="hidden" name="brinquedo3Id" value="<?php echo (array_key_exists(1,$brinquedos)) ? $brinquedos[2]['id'] : ""; ?>" class="form-control"/>
+        							<input type="hidden" name="brinquedo3Id" value="<?php echo (array_key_exists(2,$brinquedos)) ? $brinquedos[2]['id'] : ""; ?>" class="form-control"/>
         						</div>
         					</div>
         					<div class="col-md-4">
