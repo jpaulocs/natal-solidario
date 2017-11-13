@@ -18,15 +18,22 @@ class Dashboard extends CI_Controller{
 			redirect('login');
 		} else {
 			$user = $this->ion_auth->user()->row();
+			$user_groups = $this->ion_auth->get_users_groups()->result();
+
+			$grupos = array();
+	        foreach ($user_groups as $grupo) {
+	            array_push($grupos, $grupo->name);
+	        }
+	        $this->session->set_userdata('grupos_usuario', $grupos);
 			$this->session->set_userdata('usuario_logado', $user->email);
 			
 		}
 
 		// $username = '';
-		// $password = '';
-		// $email = '@gmail.com';
+		// $password = 'mobilizador135';
+		// $email = 'teste@gmail.com';
 		// $additional_data = array(
-		// 						'first_name' => '',
+		// 						'first_name' => 'teste',
 		// 						'last_name' => '',
 		// 						);
 		// $group = array('1'); // Sets user to admin.

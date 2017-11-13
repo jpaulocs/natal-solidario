@@ -8,6 +8,7 @@ class Carta extends CI_Controller{
 
     const GRUPO_CARTEIROS = 5;
     const GRUPO_REPRESENTANTE_COMUNIDADE = 3;
+    const GRUPO_MOBILIZADORES = 6;
 
     const ACAO_AUTENTICACAO = 1;
     const ACAO_INCLUSAO = 2;
@@ -53,25 +54,28 @@ class Carta extends CI_Controller{
         $start_index = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 
         $data['carteiro_selecionado']   = $this->input->get('carteiro');
+        $data['mobilizador_selecionado']   = $this->input->get('mobilizador');
         $data['regiao_administrativa']  = $this->input->get('regiao_administrativa');
         $data['numero']                 = $this->input->get('numero');
         
         log_message('info',print_r('CARTEIRO_SELECIONADO:' . $data['carteiro_selecionado'], TRUE));
+        log_message('info',print_r('MOBILIZADOR_SELECIONADO:' . $data['mobilizador_selecionado'], TRUE));
         log_message('info',print_r('REGIAO:' . $data['regiao_administrativa'], TRUE));
         log_message('info',print_r('NUMERO:' . $data['numero'], TRUE));
         
         $data['cartas'] = null;
         if ($data['carteiro_selecionado'] != null
             || strlen($data['numero']) > 0
-            || $data['regiao_administrativa'] != null) {
+            || $data['regiao_administrativa'] != null
+            || $data['mobilizador_selecionado'] != null) {
             
             $total_records = $this->Carta_model->contar_cartas_por_parametros($data['numero']
-                , $data['carteiro_selecionado'], $data['regiao_administrativa']);
+                , $data['carteiro_selecionado'], $data['regiao_administrativa'], $data['mobilizador_selecionado']);
             
             $data['cartas'] = null;
             if ($total_records > 0) {
                 $data['cartas'] = $this->Carta_model->get_cartas_por_parametros($limit_per_page, $start_index, $data['numero']
-                    , $data['carteiro_selecionado'], $data['regiao_administrativa']);
+                    , $data['carteiro_selecionado'], $data['regiao_administrativa'], $data['mobilizador_selecionado']);
             }
         } else {
             
@@ -85,6 +89,9 @@ class Carta extends CI_Controller{
         
         $this->load->model('Usuario_model');
         $data['carteiros'] = $this->Usuario_model->get_all_usuarios_by_perfil(self::GRUPO_CARTEIROS);
+
+        $this->load->model('Usuario_model');
+        $data['mobilizadores'] = $this->Usuario_model->get_all_usuarios_by_perfil(self::GRUPO_MOBILIZADORES);
         
         $this->load->model('NatalSolidario_model');
         $data['all_regioes'] = $this->NatalSolidario_model->get_all_regiao_administrativa();
@@ -235,12 +242,16 @@ class Carta extends CI_Controller{
 		
 			if($this->form_validation->run())     
             {   
+                //se o campo vem vazio envia null ao banco
+                $varMobilizador = !empty($this->input->post('mobilizador')) ? $this->input->post('mobilizador') : NULL;
+
                 $params = array(
 					
 					'beneficiado' => $this->input->post('beneficiado'),
 					'representante_comunidade' => $this->input->post('representante_comunidade'),
 					'carteiro_associado' => $this->input->post('carteiro_associado'),
-                    'regiao_administrativa' => $this->input->post('regiao_administrativa')
+                    'regiao_administrativa' => $this->input->post('regiao_administrativa'),
+                    'mobilizador' => $varMobilizador
                 );
 
                 $this->load->model('Carta_checklist_model');
@@ -287,6 +298,9 @@ class Carta extends CI_Controller{
 
                 $this->load->model('Usuario_model');
                 $data['all_repr_comunidade'] = $this->Usuario_model->get_all_usuarios_by_perfil(self::GRUPO_REPRESENTANTE_COMUNIDADE);
+
+                $this->load->model('Usuario_model');
+                $data['all_mobilizadores'] = $this->Usuario_model->get_all_usuarios_by_perfil(self::GRUPO_MOBILIZADORES);
 				//$data['all_usuarios'] = $this->Usuario_model->get_all_usuarios();
 
                 //carrega as regioes administrativas

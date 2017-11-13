@@ -27,21 +27,34 @@
                             	<label>Número da carta</label>
                                 <input type="text" name="numero" value="<?php echo $numero;?>" class="form-control" onblur="myform.submit();" />
                 			</div>
-                        	<div class="col-md-6">
-                            	<label>Carteiro</label>
+                           <div class="col-md-6">
+                                <label>Carteiro</label>
                                 <select name="carteiro" class="form-control" onchange="myform.submit();">
-                    				<option value="">selecione</option>
-                    				<?php 
-                    				foreach($carteiros as $carteiro) {
-                    				    $selected = ($carteiro['id'] == ''.$carteiro_selecionado) ? ' selected="selected"' : '';
+                                    <option value="">selecione</option>
+                                    <?php 
+                                    foreach($carteiros as $carteiro) {
+                                        $selected = ($carteiro['id'] == ''.$carteiro_selecionado) ? ' selected="selected"' : '';
                     
-                    					echo '<option value="'.$carteiro['id'].'" '.$selected.'>'.$carteiro['first_name'].'</option>';
-                    				} 
-                    				?>
-                    			</select>
-                			</div>
+                                        echo '<option value="'.$carteiro['id'].'" '.$selected.'>'.$carteiro['first_name'].'</option>';
+                                    } 
+                                    ?>
+                                </select>
+                            </div>
                 		</div>
                 		<div class="row clearfix">
+                            <div class="col-md-6">
+                                <label>Mobilizador</label>
+                                <select name="mobilizador" class="form-control" onchange="myform.submit();">
+                                    <option value="">selecione</option>
+                                    <?php 
+                                    foreach($mobilizadores as $mobilizador) {
+                                        $selected = ($mobilizador['id'] == ''.$mobilizador_selecionado) ? ' selected="selected"' : '';
+                    
+                                        echo '<option value="'.$mobilizador['id'].'" '.$selected.'>'.$mobilizador['first_name'].'</option>';
+                                    } 
+                                    ?>
+                                </select>
+                            </div>
                 			<div class="col-md-6">
                             	<label>Região administrativa </label>
                                 <select name="regiao_administrativa" class="form-control" onchange="myform.submit();">

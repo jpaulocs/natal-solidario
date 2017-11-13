@@ -71,6 +71,48 @@
 						</div>
 					</div>
 				</div>
+
+				<?php
+                $grupos_usuario = $this->session->userdata('grupos_usuario');
+                
+                if($grupos_usuario)
+                    $disabled = "disabled";
+                    if (in_array('representante-ong', $grupos_usuario, true) || in_array('admin', $grupos_usuario, true))
+                    	$disabled = "";
+                ?>
+				
+				<div class="row clearfix">
+					<div class="col-md-6">
+						<label for="mobilizador" class="control-label"><span class="text-danger">*</span>Mobilizador</label>
+						<div class="form-group">
+							<select name="mobilizador" class="form-control" <?php echo $disabled; ?> >
+								<option value=""></option>
+								<?php 
+								foreach($all_mobilizadores as $mobilizador)
+								{
+									$selected = ($mobilizador['id'] == $carta_pedido['mobilizador']) ? ' selected="selected"' : "";
+									if($disabled == "disabled" && $mobilizador['id'] == $carta_pedido['mobilizador']) {
+										$idMobilizadorHidden = $mobilizador['id'];
+									}
+
+									echo '<option value="'.$mobilizador['id'].'" '.$selected.'>'.$mobilizador['first_name'].'</option>';
+								} 
+								?>
+							</select>
+							<?php
+								//caso o select esteja disabilitado(perfil sem acesso) o mobilizador é enviado aqui...
+								//no submit o html, por padrão, não envia campos que estejam desabilitados...
+								if(isset($idMobilizadorHidden)):
+							?>
+								<input type="hidden" name="mobilizador" value="<?php echo $idMobilizadorHidden; ?>" />
+							<?php
+								endif;
+							?>
+							<span class="text-danger"><?php echo form_error('mobilizador');?></span>
+						</div>
+					</div>
+				</div>
+				
 				
 				<div class="row clearfix">
 					<div class="col-md-4">
@@ -129,7 +171,14 @@
             	<button type="submit" class="btn btn-success">
 					<i class="fa fa-check"></i> Salvar
 				</button>
-	        </div>				
+	        </div>
+	        <script type="text/javascript">
+	jQuery(function ($) {        
+	  $('form').bind('submit', function () {
+	    $(this).find(':select').prop('disabled', false);
+	  });
+	});
+</script>			
 			<?php echo form_close(); ?>
 		</div>
     </div>

@@ -10,6 +10,11 @@ class Usuario_perfil_model extends CI_Model
     {
         parent::__construct();
     }
+
+    function get_all_perfil() {
+        $this->db->order_by('id', 'desc');
+        return $this->db->get('perfil')->result_array();
+    }
     
     /*
      * Get usuario_perfil by id

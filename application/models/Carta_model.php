@@ -27,7 +27,7 @@ class Carta_model extends CI_Model
         return $this->db->get('carta')->result_array();
     }
     
-    function get_cartas_por_parametros($limit, $start, $numero_carta, $idCarteiro, $idRegiaoAdministrativa)
+    function get_cartas_por_parametros($limit, $start, $numero_carta, $idCarteiro, $idRegiaoAdministrativa, $idMobilizador)
     {
         $this->db->limit($limit, $start);
         $this->db->select('carta.*, beneficiado.nome as beneficiado_nome, u.first_name as representante_comunidade_nome, u2.first_name as carteiro_nome, u2.id as carteiro_id');
@@ -36,6 +36,9 @@ class Carta_model extends CI_Model
         $this->db->join('usuario u2', 'carta.carteiro_associado = u2.id', 'left');
         if ($idCarteiro) {
             $this->db->where('carteiro_associado', $idCarteiro);
+        }
+        if ($idMobilizador) {
+            $this->db->where('mobilizador', $idMobilizador);
         }
         if ($numero_carta) {
             $this->db->where('numero', $numero_carta);
@@ -73,10 +76,13 @@ class Carta_model extends CI_Model
         return $this->db->delete('carta',array('id'=>$id));
     }
     
-    function contar_cartas_por_parametros($numero_carta, $idCarteiro, $idRegiaoAdministrativa) {
+    function contar_cartas_por_parametros($numero_carta, $idCarteiro, $idRegiaoAdministrativa, $idMobilizador) {
         $this->db->select('*');
         if ($idCarteiro) {
             $this->db->where('carteiro_associado', $idCarteiro);
+        }
+        if ($idMobilizador) {
+            $this->db->where('mobilizador', $idMobilizador);
         }
         if ($numero_carta) {
             $this->db->where('numero', $numero_carta);

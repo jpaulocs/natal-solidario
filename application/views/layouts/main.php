@@ -95,6 +95,31 @@
                                 <i class="fa fa-dashboard"></i> <span>Painel</span>
                             </a>
                         </li>
+
+                        <?php
+                        $grupos_usuario = $this->session->userdata('grupos_usuario');
+                        
+                        if($this->session->userdata('grupos_usuario'))
+                            //echo print_r($grupos_usuario);
+                            if (in_array("admin", $grupos_usuario, true)):
+                        ?>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-address-card"></i> <span>Usuário</span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class="active">
+                                        <a href="<?php echo site_url('usuario/add');?>"><i class="fa fa-plus"></i> Novo</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo site_url('usuario/index');?>"><i class="fa fa-list-ul"></i> Listar</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        <?php
+                            endif;
+                        ?>
+
                         <li>
                             <a href="#">
                                 <i class="fa fa-address-card"></i> <span>Responsável</span>
@@ -141,6 +166,23 @@
 
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
+                <?php if($this->session->flashdata('message')): ?>
+                    <div class="alert alert-danger" role="alert">
+                        <strong><?php echo $this->session->flashdata('message'); ?> </strong>
+                        <!-- <?php echo $this->session->flashdata('teste'); ?> -->
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <?php elseif($this->session->flashdata('message_ok')): ?>
+                    <div class="alert alert-success" role="alert">
+                        <strong><?php echo $this->session->flashdata('message_ok'); ?> </strong>
+                        <!-- <?php echo $this->session->flashdata('teste'); ?> -->
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <?php endif; ?>
                 <!-- Main content -->
                 <section class="content">
                     <?php                    

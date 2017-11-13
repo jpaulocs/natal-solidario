@@ -2,39 +2,31 @@
     <div class="col-md-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">Usuarios Listing</h3>
+                <h3 class="box-title">Usuários</h3>
             	<div class="box-tools">
-                    <a href="<?php echo site_url('usuario/add'); ?>" class="btn btn-success btn-sm">Add</a> 
+                    <a href="<?php echo site_url('usuario/add'); ?>" class="btn btn-success btn-sm">Novo</a> 
                 </div>
             </div>
             <div class="box-body">
                 <table class="table table-striped">
                     <tr>
-						<th>ID</th>
+						
 						<th>Nome</th>
-						<th>Email</th>
-						<th>Senha</th>
-						<th>Perfil</th>
-						<th>Removido</th>
-						<th>Area Abrangencia</th>
-						<th>Referencia</th>
+						<th>E-mail</th>
+						<th>Área Abrangência</th>
+						<th>Referência</th>
 						<th>Telefone</th>
-						<th>Actions</th>
+						<th>Ações</th>
                     </tr>
                     <?php foreach($usuarios as $u){ ?>
                     <tr>
-						<td><?php echo $u['id']; ?></td>
-						<td><?php echo $u['nome']; ?></td>
+						<td><?php echo $u['first_name']; ?></td>
 						<td><?php echo $u['email']; ?></td>
-						<td><?php echo $u['senha']; ?></td>
-						<td><?php echo $u['perfil']; ?></td>
-						<td><?php echo $u['removido']; ?></td>
 						<td><?php echo $u['area_abrangencia']; ?></td>
 						<td><?php echo $u['referencia']; ?></td>
-						<td><?php echo $u['telefone']; ?></td>
+						<td><?php echo $u['phone']; ?></td>
 						<td>
-                            <a href="<?php echo site_url('usuario/edit/'.$u['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Edit</a> 
-                            <a href="<?php echo site_url('usuario/remove/'.$u['id']); ?>" class="btn btn-danger btn-xs"><span class="fa fa-trash"></span> Delete</a>
+                            <a href="<?php echo site_url('usuario/edit/'.$u['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Editar</a>
                         </td>
                     </tr>
                     <?php } ?>
