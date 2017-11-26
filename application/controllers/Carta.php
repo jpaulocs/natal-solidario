@@ -53,29 +53,37 @@ class Carta extends CI_Controller{
         $limit_per_page = 50;
         $start_index = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 
-        $data['carteiro_selecionado']   = $this->input->get('carteiro');
-        $data['mobilizador_selecionado']   = $this->input->get('mobilizador');
-        $data['regiao_administrativa']  = $this->input->get('regiao_administrativa');
-        $data['numero']                 = $this->input->get('numero');
+        $data['carteiro_selecionado']       = $this->input->get('carteiro');
+        $data['mobilizador_selecionado']    = $this->input->get('mobilizador');
+        $data['regiao_administrativa']      = $this->input->get('regiao_administrativa');
+        $data['numero']                     = $this->input->get('numero');
+        $data['nome_crianca']               = $this->input->get('nome_crianca');
+        $data['nome_responsavel']           = $this->input->get('nome_responsavel');
+        $data['situacao']                   = $this->input->get('situacao');
         
-        log_message('info',print_r('CARTEIRO_SELECIONADO:' . $data['carteiro_selecionado'], TRUE));
-        log_message('info',print_r('MOBILIZADOR_SELECIONADO:' . $data['mobilizador_selecionado'], TRUE));
-        log_message('info',print_r('REGIAO:' . $data['regiao_administrativa'], TRUE));
-        log_message('info',print_r('NUMERO:' . $data['numero'], TRUE));
+        //log_message('info',print_r('CARTEIRO_SELECIONADO:' . $data['carteiro_selecionado'], TRUE));
+        //log_message('info',print_r('MOBILIZADOR_SELECIONADO:' . $data['mobilizador_selecionado'], TRUE));
+        //log_message('info',print_r('REGIAO:' . $data['regiao_administrativa'], TRUE));
+        //log_message('info',print_r('NUMERO:' . $data['numero'], TRUE));
         
-        $data['cartas'] = null;
+        $data['cartas'] = null; 
         if ($data['carteiro_selecionado'] != null
             || strlen($data['numero']) > 0
+            || strlen($data['nome_crianca']) > 0
+            || strlen($data['nome_responsavel']) > 0
             || $data['regiao_administrativa'] != null
-            || $data['mobilizador_selecionado'] != null) {
+            || $data['mobilizador_selecionado'] != null
+            || $data['situacao'] != null) {
             
             $total_records = $this->Carta_model->contar_cartas_por_parametros($data['numero']
-                , $data['carteiro_selecionado'], $data['regiao_administrativa'], $data['mobilizador_selecionado']);
+                , $data['carteiro_selecionado'], $data['regiao_administrativa'], $data['mobilizador_selecionado']
+                , $data['nome_crianca'], $data['nome_responsavel'], $data['situacao']);
             
             $data['cartas'] = null;
             if ($total_records > 0) {
                 $data['cartas'] = $this->Carta_model->get_cartas_por_parametros($limit_per_page, $start_index, $data['numero']
-                    , $data['carteiro_selecionado'], $data['regiao_administrativa'], $data['mobilizador_selecionado']);
+                    , $data['carteiro_selecionado'], $data['regiao_administrativa'], $data['mobilizador_selecionado']
+                    , $data['nome_crianca'], $data['nome_responsavel'], $data['situacao']);
             }
         } else {
             

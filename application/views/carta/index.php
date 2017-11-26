@@ -23,14 +23,24 @@
 					<div class="panel-heading">Filtrar</div>
 					<div class="panel-body">
 						<div class="row clearfix">
-                        	<div class="col-md-6">
+                        	<div class="col-md-4">
                             	<label>Número da carta</label>
                                 <input type="text" name="numero" value="<?php echo $numero;?>" class="form-control" onblur="myform.submit();" />
                 			</div>
+                			<div class="col-md-4">
+                            	<label>Nome da criança</label>
+                                <input type="text" name="nome_crianca" value="<?php echo $nome_crianca;?>" class="form-control" onblur="myform.submit();" />
+                			</div>
+                			<div class="col-md-4">
+                            	<label>Nome do responsável</label>
+                                <input type="text" name="nome_responsavel" value="<?php echo $nome_responsavel;?>" class="form-control" onblur="myform.submit();" />
+                			</div>
+                		</div>
+                		<div class="row clearfix">
                            <div class="col-md-6">
                                 <label>Carteiro</label>
                                 <select name="carteiro" class="form-control" onchange="myform.submit();">
-                                    <option value="">selecione</option>
+                                    <option value="">Todos</option>
                                     <?php 
                                     foreach($carteiros as $carteiro) {
                                         $selected = ($carteiro['id'] == ''.$carteiro_selecionado) ? ' selected="selected"' : '';
@@ -40,12 +50,10 @@
                                     ?>
                                 </select>
                             </div>
-                		</div>
-                		<div class="row clearfix">
-                            <div class="col-md-6">
+                           <div class="col-md-6">
                                 <label>Mobilizador</label>
                                 <select name="mobilizador" class="form-control" onchange="myform.submit();">
-                                    <option value="">selecione</option>
+                                    <option value="">Todos</option>
                                     <?php 
                                     foreach($mobilizadores as $mobilizador) {
                                         $selected = ($mobilizador['id'] == ''.$mobilizador_selecionado) ? ' selected="selected"' : '';
@@ -55,10 +63,12 @@
                                     ?>
                                 </select>
                             </div>
+                		</div>
+                		<div class="row clearfix">
                 			<div class="col-md-6">
                             	<label>Região administrativa </label>
                                 <select name="regiao_administrativa" class="form-control" onchange="myform.submit();">
-                    				<option value="">selecione</option>
+                    				<option value="">Todas</option>
                     				<?php 
                     				foreach($all_regioes as $ra) {
                     				    $selected = ($ra['id'] == ''.$regiao_administrativa) ? ' selected' : '';
@@ -66,6 +76,15 @@
                     				    echo '<option value="'.$ra['id'].'" '.$selected.'>'.$ra['nome'].'</option>';
                     				}
                     				?>
+                    			</select>
+                			</div>
+                			<div class="col-md-6">
+                            	<label>Situação </label>
+                                <select name="situacao" class="form-control" onchange="myform.submit();">
+                    				<option value="">Todas</option>
+                    				<option value="SEM_CARTEIRO_VINCULADO" <?php echo ($situacao == 'SEM_CARTEIRO_VINCULADO') ? 'selected' : '' ?>>Sem carteiro vinculado</option>
+                    				<option value="SEM_MOBILIZADOR_VINCULADO" <?php echo ($situacao == 'SEM_MOBILIZADOR_VINCULADO') ? 'selected' : '' ?>>Sem mobilizador vinculado</option>
+                    				<option value="AGUARDANDO_ADOCAO" <?php echo ($situacao == '3') ? 'selected' : 'AGUARDANDO_ADOCAO' ?>>Aguardando adoção</option>
                     			</select>
                 			</div>
                 		</div>
@@ -85,8 +104,8 @@
                     <tr>
 						<th>Número</th>
                         <th>Beneficiado</th>
-                        <th>Representante Comunidade</th>
-                        <th>Carteiro</th>
+                        <th>Responsável</th>
+                        <th>Adotante</th>
                         <th>Data Cadastro</th>
                         <th>Ação</th>
                     </tr>
@@ -97,8 +116,8 @@
                     <tr>
 						<td><?php echo $c['numero']; ?></td>
                         <td><?php echo $c['beneficiado_nome']; ?></td>
-                        <td><?php echo $c['representante_comunidade_nome']; ?></td>
-                        <td><?php echo $c['carteiro_nome']; ?></td>
+                        <td><?php echo $c['responsavel_nome']; ?></td>
+                        <td><?php echo $c['adotante_nome']; ?></td>
                         <td><?php echo date("d/m/Y", strtotime($c['data_cadastro'])); ?></td>
 						<td>
                             <?php
@@ -114,18 +133,18 @@
                                 
                              endif;
                              
-                             if (in_array("admin", $grupos_usuario, true) || $this->session->userdata('usuario_logado_id') == $c['carteiro_id']):
+                             if (in_array("admin", $grupos_usuario, true) || $this->session->userdata('usuario_logado_id') == $c['carteiro_associado']):
                             ?>
                             	<a href="<?php echo site_url('carta/formulario/'.$c['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Formulário</a>
                             <?php 
                                 
                              endif;
                              
-                             if (in_array("admin", $grupos_usuario, true) || in_array("mobilizador", $grupos_usuario, true)) {
+                             if (in_array("admin", $grupos_usuario, true) || $this->session->userdata('usuario_logado_id') == $c['mobilizador']):
                              ?>
                             	<a href="<?php echo site_url('carta/adotante/'.$c['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Adotante</a>
                             <?php
-                             }
+                             endif;
                             ?>
                             
                         </td>
