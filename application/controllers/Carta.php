@@ -686,15 +686,15 @@ class Carta extends CI_Controller{
                     } else {
                         $params['data_cadastro'] = date('Y-m-d H:i:s');
                         $params['mobilizador'] = $this->session->userdata('usuario_logado_id');
-                        $adotante_id = $this->Adotante_model->add_adotante($params);
                         
                         $this->load->helper('random_helper');
-                        $token = gerarToken(20);
+                        $params['token_acesso'] =  gerarToken(20);
+                        
+                        $adotante_id = $this->Adotante_model->add_adotante($params);
                     }
                     
                     $params = array(
                         'adotante' => $adotante_id,
-                        'token_acesso' => $token,
                     );
                     $this->Carta_model->update_carta_pedido($id,$params);
                     

@@ -190,4 +190,14 @@ class Carta_model extends CI_Model
     function contar_todas_cartas() {
         return $this->db->count_all("carta");
     }
+    
+    function pesquisar_por_ano_adotante($anoEvento, $idAdotante) {
+        $this->db->select('carta.*, beneficiado.nome as beneficiado_nome, responsavel.nome as responsavel_nome, beneficiado.data_nascimento');
+        $this->db->join('beneficiado', 'carta.beneficiado = beneficiado.id');
+        $this->db->join('responsavel', 'beneficiado.responsavel = responsavel.id');
+        $this->db->like('carta.numero', $anoEvento, 'after');
+        $this->db->where('carta.adotante', $idAdotante);
+        $this->db->order_by('id', 'asc');
+        return $this->db->get('carta')->result_array();
+    }
 }
