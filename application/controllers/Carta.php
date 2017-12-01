@@ -163,11 +163,14 @@ class Carta extends CI_Controller{
             $params = array(
 				'beneficiado' => $this->input->post('beneficiado'),
 				'representante_comunidade' => $this->input->post('representante_comunidade'),
-				'carteiro_associado' => $this->input->post('carteiro_associado'),
 				'data_cadastro' => date('Y-m-d H:i:s'),
 				'numero' => $ano . $regiaoAdministrativa . $idBeneficiado,
                 'regiao_administrativa' => $this->input->post('regiao_administrativa')
             );
+
+            if($this->input->post('carteiro_associado')) {
+                $params['carteiro_associado'] = $this->input->post('carteiro_associado');
+            }
             
             $carta_pedido_id = $this->Carta_model->add_carta_pedido($params);
 
