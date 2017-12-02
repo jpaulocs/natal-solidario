@@ -55,4 +55,19 @@ class Beneficiado_model extends CI_Model
     {
         return $this->db->delete('beneficiado',array('id'=>$id));
     }
+
+    /*
+     * Get all beneficiados
+     */
+    function get_all_beneficiados_por_adotante($idAdotante)
+    {
+        $this->db->select('beneficiado.nome');
+        $this->db->distinct();
+        $this->db->join('carta', 'beneficiado.id = carta.beneficiado');
+        $this->db->join('adotante', 'carta.adotante = adotante.id');
+        $this->db->where('adotante.id', $idAdotante);
+        $this->db->group_by('beneficiado.nome');
+        $this->db->order_by('beneficiado.nome', 'asc');
+        return $this->db->get('beneficiado')->result_array();
+    }
 }

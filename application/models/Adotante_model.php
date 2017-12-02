@@ -28,4 +28,11 @@ class Adotante_model extends CI_Model
     {
         return $this->db->get_where('adotante',array('email'=>$email))->row_array();
     }
+
+    function get_adotante_por_status_envio_email($status)
+    {
+        $this->db->where('email_enviado', $status);
+        $this->db->order_by('id', 'desc');
+        return $this->db->get('adotante')->result_array();
+    }
 }
