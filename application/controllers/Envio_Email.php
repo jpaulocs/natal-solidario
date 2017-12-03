@@ -86,13 +86,14 @@ class Envio_Email extends CI_Controller{
         $from_email = "";
 
         $config = Array(
-		    'protocol' => 'smtp',
+		    'protocol' => 'mail',
 		    'smtp_host' => '',
-		    'smtp_port' => 465,
+		    'smtp_port' => 587,
 		    'smtp_user' => '',
 		    'smtp_pass' => '',
 		    'mailtype'  => 'html', 
-		    'charset'   => 'utf-8'
+		    'charset'   => 'utf-8',
+            'smtp_crypto' => 'ssl'
 		);
 		$this->email->initialize($config);
 		$this->email->set_mailtype("html");
@@ -102,6 +103,8 @@ class Envio_Email extends CI_Controller{
         $this->email->subject('Natal Solidário - Informações sobre carta(s) adotada(s)');
         $this->email->message($body);
 
+        //$this->email->send(FALSE);
+        //return $this->email->print_debugger(array('headers'));
         return $this->email->send();
     }
 

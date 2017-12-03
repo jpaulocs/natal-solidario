@@ -121,4 +121,15 @@ class Presente extends CI_Controller{
             $this->load->view('layouts/main_presente',$data);
         }
     }
+
+    function gerarEtiqueta() {
+        $data = Array(
+            'numeroCarta' => '20171200070',
+            'nomeResponsavel' => 'Adriana da Conceição Barbosa',
+            'nomeCrianca' => 'Riquelme Silva Barbosa'
+        );
+
+        //load the view and saved it into $html variable
+        $this->load->view('presente/template_etiqueta', $data);
+    }
 }
