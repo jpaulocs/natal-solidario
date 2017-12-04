@@ -74,7 +74,7 @@
 				<div class="panel-body">
 					<h4>Colar a etiqueta preferencialmente em <b>dois lugares</b> de forma que fique <b>bem fixado</b> e <b>visível</b>.</h4>
 				</div>
-				<div class="panel-footer"><a href="<?php echo site_url('presente/gerarEtiqueta/'.$cartaSelecionada['numero']); ?>" class="btn btn-success" target="_blank">Visualizar etiqueta</a></div>
+				<div class="panel-footer"><a href="<?php echo site_url('presente/gerarEtiqueta/'.$cartaSelecionada['numero']."/". $cartaSelecionada['responsavel_nome'] . "/" . $cartaSelecionada['beneficiado_nome']); ?>" class="btn btn-success" target="_blank">Visualizar etiqueta</a></div>
 			</div>
 		</div>
 		<div class="box">

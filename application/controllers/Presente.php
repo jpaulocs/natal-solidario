@@ -124,9 +124,9 @@ class Presente extends CI_Controller{
 
     function gerarEtiqueta() {
         $data = Array(
-            'numeroCarta' => '20171200070',
-            'nomeResponsavel' => 'Adriana da Conceição Barbosa',
-            'nomeCrianca' => 'Riquelme Silva Barbosa'
+            'numeroCarta' => urldecode($this->uri->segment(3)),
+            'nomeResponsavel' => urldecode($this->uri->segment(4)),
+            'nomeCrianca' => urldecode($this->uri->segment(5))
         );
 
         //load the view and saved it into $html variable
