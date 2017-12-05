@@ -33,9 +33,13 @@
                 </div>
                 <!-- Header Navbar: style can be found in header.less -->
                 <div class="navbar navbar-static-top">
-                	<div  style="font-size: 20px;line-height: 50px;text-align: center;padding: 0 15px;font-weight: bold;color:white;">
-                    	<span style="font-size: 20px;">Heróis de Verdade - Natal Solidário <?php echo date("Y"); ?></span>
-                    </div> 
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation </span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a> 
                 </div>
             </header>
             <!-- Left side column. contains the logo and sidebar -->
