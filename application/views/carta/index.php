@@ -107,6 +107,7 @@
                         <th>Responsável</th>
                         <th>Adotante</th>
                         <th>Data Cadastro</th>
+                        <th>Credenciado</th>
                         <th>Ação</th>
                     </tr>
                     <?php
@@ -119,8 +120,14 @@
                         <td><?php echo $c['responsavel_nome']; ?></td>
                         <td><?php echo $c['adotante_nome']; ?></td>
                         <td><?php echo date("d/m/Y", strtotime($c['data_cadastro'])); ?></td>
+                        <td><?php echo ($c['credenciado']) ? 'Sim' : 'Não'; ?></td>
 						<td>
+							<?php
+							if(!$c['credenciado']) {
+							?>
+							<a href="<?php echo site_url('carta/credenciar/'.$c['id']); ?>" class="btn btn-info btn-xs" onclick="return confirm('Confirma o credenciamento da carta <?php echo $c['numero'] . " - " . $c['beneficiado_nome']; ?>?');"><span class="fa fa-pencil"></span> Credenciar</a>
                             <?php
+							}
                             
                             $grupos_usuario = $this->session->userdata('grupos_usuario');
                             

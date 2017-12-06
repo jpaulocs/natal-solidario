@@ -200,4 +200,9 @@ class Carta_model extends CI_Model
         $this->db->order_by('id', 'asc');
         return $this->db->get('carta')->result_array();
     }
+    
+    function atualizar_carta_credenciamento($id,$params) {
+        $this->db->where('id',$id);
+        return $this->db->update('carta',$params);
+    }
 }

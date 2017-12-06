@@ -712,4 +712,20 @@ class Carta extends CI_Controller{
             redirect('carta/index');
         }
     }
+    
+    function credenciar($id)
+    {
+        if(isset($id)) {
+            
+            $this->load->model('Carta_model');
+            $data['carta_pedido'] = $this->Carta_model->get_carta_pedido($id);
+            $params = array(
+                'credenciado' => true,
+                'data_credenciamento' => date('Y-m-d H:i:s'),
+                'usuario_credenciamento' => $this->ion_auth->user()->row()->id,
+            );
+            $this->Carta_model->atualizar_carta_credenciamento($id,$params);
+        } 
+        redirect('carta/index');
+    }
 }
