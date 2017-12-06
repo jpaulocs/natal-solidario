@@ -122,38 +122,36 @@
                         <td><?php echo date("d/m/Y", strtotime($c['data_cadastro'])); ?></td>
                         <td><?php echo ($c['credenciado']) ? 'Sim' : 'Não'; ?></td>
 						<td>
-							<?php
-							if(!$c['credenciado']) {
-							?>
-							<a href="<?php echo site_url('carta/credenciar/'.$c['id']); ?>" class="btn btn-info btn-xs" onclick="return confirm('Confirma o credenciamento da carta <?php echo $c['numero'] . " - " . $c['beneficiado_nome']; ?>?');"><span class="fa fa-pencil"></span> Credenciar</a>
-                            <?php
-							}
-                            
+							<?php                            
                             $grupos_usuario = $this->session->userdata('grupos_usuario');
                             
                             if($this->session->userdata('grupos_usuario'))
                                 //echo print_r($grupos_usuario);
                                 if (in_array("admin", $grupos_usuario, true) || in_array("representante-ong", $grupos_usuario, true)):
                             ?>
-                                <a href="<?php echo site_url('carta/edit/'.$c['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Editar</a>
+                                <a href="<?php echo site_url('carta/edit/'.$c['id']); ?>" class="btn btn-info btn-xs" style="margin-right:10px;"><span class="fa fa-pencil"></span> Editar</a>
                             <?php 
                                 
                              endif;
                              
                              if (in_array("admin", $grupos_usuario, true) || $this->session->userdata('usuario_logado_id') == $c['carteiro_associado']):
                             ?>
-                            	<a href="<?php echo site_url('carta/formulario/'.$c['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Formulário</a>
+                            	<a href="<?php echo site_url('carta/formulario/'.$c['id']); ?>" class="btn btn-success btn-xs" style="margin-right:10px;"><span class="fa fa-pencil"></span> Formulário</a>
                             <?php 
                                 
                              endif;
                              
                              if (in_array("admin", $grupos_usuario, true) || $this->session->userdata('usuario_logado_id') == $c['mobilizador']):
                              ?>
-                            	<a href="<?php echo site_url('carta/adotante/'.$c['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Adotante</a>
+                            	<a href="<?php echo site_url('carta/adotante/'.$c['id']); ?>" class="btn btn-warning btn-xs" style="margin-right:10px;"><span class="fa fa-pencil"></span> Adotante</a>
                             <?php
                              endif;
-                            ?>
-                            
+                             if ((in_array("admin", $grupos_usuario, true) || in_array("representante-comunidade", $grupos_usuario, true)) && !$c['credenciado']) {
+                                 ?>
+							<a href="<?php echo site_url('carta/credenciar/'.$c['id']); ?>" class="btn btn-danger btn-xs" style="margin-right:10px;" onclick="return confirm('Confirma o credenciamento da carta <?php echo $c['numero'] . " - " . $c['beneficiado_nome']; ?>?');"><span class="fa fa-pencil"></span> Credenciar</a>
+                            <?php
+							}
+                             ?>
                         </td>
                     </tr>
                     <?php }
