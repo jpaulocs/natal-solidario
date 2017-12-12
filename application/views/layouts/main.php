@@ -116,6 +116,16 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-address-card"></i> <span>Programação das palestras</span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li>
+                                        <a href="<?php echo site_url('palestra/index');?>"><i class="fa fa-list-ul"></i> Listar</a>
+                                    </li>
+                                </ul>
+                            </li>
                         <?php
                             endif;
                         ?>
