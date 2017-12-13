@@ -194,7 +194,9 @@ class Carta_model extends CI_Model
     }
     
     function contar_todas_cartas() {
-        return $this->db->count_all("carta");
+        $this->db->where('removida', false);
+        $this->db->from('carta');
+        return $this->db->count_all_results();
     }
     
     function pesquisar_por_ano_adotante($anoEvento, $idAdotante) {
