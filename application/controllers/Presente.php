@@ -5,11 +5,17 @@ class Presente extends CI_Controller{
     function __construct()
     {
         parent::__construct();
+
+        $this->load->add_package_path(APPPATH.'third_party/ion_auth/');
+        $this->load->library('ion_auth');
+
         $this->load->model('Carta_model');
         $this->load->model('Adotante_model');
         $this->load->model('Brinquedo_classificacao_model');
         $this->load->model('Presente_model');
         $this->load->model('Local_entrega_regiao_model');
+        $this->load->model('Local_entrega_model');
+        $this->load->model('Presente_historico_situacao_model');
         
         $this->session->set_userdata('nomeAdotante', '');
         $this->session->set_userdata('cartasAdotante', []);
@@ -116,6 +122,9 @@ class Presente extends CI_Controller{
             if (!$data['local_entrega_familia']) {
                 $data['local_entrega_familia'] = '';
             }
+            $dadosPresente = $this->Presente_model->get_dados_presente($this->input->post('numeroCarta'));
+            $data['nomeLocalEntrega'] = urlencode($dadosPresente['nomeLocalEntrega']);
+            $data['numeroSalaEntrega'] = $dadosPresente['numeroSalaEntrega'];
             
             $data['_view'] = 'presente/add';
             $this->load->view('layouts/main_presente',$data);
@@ -123,13 +132,100 @@ class Presente extends CI_Controller{
     }
 
     function gerarEtiqueta() {
+        
+
         $data = Array(
             'numeroCarta' => urldecode($this->uri->segment(3)),
             'nomeResponsavel' => urldecode($this->uri->segment(4)),
-            'nomeCrianca' => urldecode($this->uri->segment(5))
+            'nomeCrianca' => urldecode($this->uri->segment(5)),
+            'localEntrega' => urldecode($this->uri->segment(6)) . "<br/> Sala: " . urldecode($this->uri->segment(7)),
+            'urlQrcode' => urlencode('http://natalsolidario.dev/presente/receberPresente/'.$this->uri->segment(3))
         );
 
         //load the view and saved it into $html variable
         $this->load->view('presente/template_etiqueta', $data);
+    }
+
+    function receberPresente($numeroCarta = null) {
+        if (!$this->ion_auth->logged_in())
+        {
+            $this->session->set_flashdata('message', 'You must be an admin to view this page');
+            redirect('login');
+        } else {
+            $user = $this->ion_auth->user()->row();
+            $user_groups = $this->ion_auth->get_users_groups()->result();
+
+            $grupos = array();
+            foreach ($user_groups as $grupo) {
+                array_push($grupos, $grupo->name);
+            }
+
+            $this->session->set_userdata('usuario_logado', $user->email);
+            $this->session->set_userdata('grupos_usuario', $grupos);
+            $this->session->set_userdata('usuario_logado_id', $user->id);
+        }
+
+        if($this->input->post('numeroCarta') || isset($numeroCarta)) {
+            $numeroCarta = isset($numeroCarta) ? $numeroCarta : $this->input->post('numeroCarta');
+
+            $usuario = $this->ion_auth->user()->row();
+
+            $dadosPresente = $this->Presente_model->get_dados_presente($numeroCarta);
+
+            if(is_null($dadosPresente['idPresente'])) {
+                $this->session->set_flashdata('message', 'Não existe presente cadastrado para a carta número ' . $numeroCarta);
+            } else {
+                $this->session->set_flashdata('message', '');
+            }
+
+            $data['allLocaisArmazenamento'] = $this->Local_entrega_model->get_locais_armazenamento();
+            $data['allSituacoesPresente'] = $this->Presente_model->get_all_situacoes_presente();
+
+            if($this->input->post('local_armazenamento')) {
+                $params = array(
+                    'local_armazenamento' => $this->input->post('local_armazenamento')
+                );
+                $this->Presente_model->update($dadosPresente['idPresente'], $params);
+            }
+
+            if($this->input->post('situacao_presente')) {
+                $params = array(
+                    'situacao' => $this->input->post('situacao_presente')
+                );
+                $this->Presente_model->update($dadosPresente['idPresente'], $params);
+
+                $paramsSituacao = array(
+                    'presente' => $dadosPresente['idPresente'],
+                    'situacao' => $this->input->post('situacao_presente'),
+                    'usuario' => $user->id,
+                    'data_situacao' => date('Y-m-d H:i:s')
+                );
+                $this->Presente_historico_situacao_model->add($paramsSituacao);
+
+            }
+
+            $dadosPresenteAposAtualizacao = $this->Presente_model->get_dados_presente($numeroCarta);
+            $dados = array(
+                'idPresente' => $dadosPresenteAposAtualizacao['idPresente'],
+                'numeroCarta' => $dadosPresenteAposAtualizacao['numeroCarta'],
+                'nomeAdotante' => $dadosPresenteAposAtualizacao['adotante_nome'],
+                'numeroSalaEntrega' => $dadosPresenteAposAtualizacao['numeroSalaEntrega'],
+                'nomeLocalEntrega' => $dadosPresenteAposAtualizacao['nomeLocalEntrega'],
+                'responsavel_nome' => $dadosPresenteAposAtualizacao['responsavel_nome'],
+                'beneficiado_nome' => $dadosPresenteAposAtualizacao['beneficiado_nome'],
+                'localArmazenamentoPresente' => $dadosPresenteAposAtualizacao['localArmazenamentoPresente'],
+                'situacaoPresente' => $dadosPresenteAposAtualizacao['situacaoPresente']
+            );
+
+            $data['_view'] = 'presente/receber-presente';
+            $data['dados'] = $dados;
+
+
+            $this->load->view('layouts/main',$data);
+        } else {
+            $data['_view'] = 'presente/receber-presente';
+            $this->load->view('layouts/main',$data);
+        }
+
     }
 }

@@ -212,4 +212,8 @@ class Carta_model extends CI_Model
         $this->db->where('id',$id);
         return $this->db->update('carta',$params);
     }
+
+    function get_carta_by_numeroCarta($numeroCarta) {
+        return $this->db->get_where('carta',array('numero'=>$numeroCarta))->row_array();
+    }
 }

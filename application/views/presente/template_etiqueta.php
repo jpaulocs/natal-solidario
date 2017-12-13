@@ -12,6 +12,9 @@
               <thead></thead>
               <tbody>
                 <tr>
+                  <td rowspan="4">
+                    <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=<?php echo $urlQrcode;?>&choe=UTF-8" title="Link to Google.com" />
+                  </td>
                   <td>Número da carta</td>
                   <td><?php echo $numeroCarta; ?></td>
                 </tr>
@@ -23,10 +26,13 @@
                   <td>Nome do Responsável</td>
                   <td><?php echo $nomeResponsavel; ?></td>
                 </tr>
+                <tr>
+                  <td>Local de entrega</td>
+                  <td><?php echo $localEntrega; ?></td>
+                </tr>
               </tbody>
             </table>
           </div>
-        </div>
       </div>
       <div class="row">
           <div class="col-md-10" style="">
@@ -34,6 +40,9 @@
               <thead></thead>
               <tbody>
                 <tr>
+                  <td rowspan="4">
+                    <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=<?php echo $urlQrcode;?>&choe=UTF-8" title="Link to Google.com" />
+                  </td>
                   <td>Número da carta</td>
                   <td><?php echo $numeroCarta; ?></td>
                 </tr>
@@ -44,6 +53,10 @@
                 <tr>
                   <td>Nome do Responsável</td>
                   <td><?php echo $nomeResponsavel; ?></td>
+                </tr>
+                <tr>
+                  <td>Local de entrega</td>
+                  <td><?php echo $localEntrega; ?></td>
                 </tr>
               </tbody>
             </table>

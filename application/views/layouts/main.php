@@ -19,6 +19,7 @@
         <!-- AdminLTE Skins. Choose a skin from the css/skins
              folder instead of downloading all of them to reduce the load. -->
         <link rel="stylesheet" href="<?php echo site_url('resources/css/_all-skins.min.css');?>">
+
     </head>
     
     <body class="hold-transition skin-blue sidebar-mini">
@@ -159,6 +160,30 @@
                                 </li>
 							</ul>
                         </li>
+
+                        <?php
+                        $grupos_usuario = $this->session->userdata('grupos_usuario');
+                        
+                        if($this->session->userdata('grupos_usuario'))
+                            //echo print_r($grupos_usuario);
+                            if (in_array("admin", $grupos_usuario, true) ||
+                                in_array("representante-comunidade", $grupos_usuario, true) ||
+                                in_array("representante-ong", $grupos_usuario, true) ||
+                                in_array("mobilizador", $grupos_usuario, true)):
+                        ?>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-gift"></i> <span>Presente</span>
+                                </a>
+                                <ul class="treeview-menu">
+                                <li class="active">
+                                    <a href="<?php echo site_url('presente/receberPresente');?>"><i class="fa fa-gift"></i> Recebimento</a>
+                                </li>
+                            </ul>
+                            </li>
+                        <?php
+                            endif;
+                        ?>
                     </ul>
                 </section>
                 <!-- /.sidebar -->
