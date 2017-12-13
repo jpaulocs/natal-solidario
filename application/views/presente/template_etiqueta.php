@@ -1,7 +1,7 @@
 <html>
 <head>
-	<link rel="stylesheet" href="http://natalsolidario.dev/resources/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://natalsolidario.dev/resources/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo site_url('resources/css/bootstrap.min.css');?>">
+	<link rel="stylesheet" href="<?php echo site_url('resources/css/font-awesome.min.css');?>">
     <title>Etiqueta - Carta número <?php echo $numeroCarta; ?></title>
 </head>
 <body>
