@@ -139,7 +139,7 @@ class Presente extends CI_Controller{
             'nomeResponsavel' => urldecode($this->uri->segment(4)),
             'nomeCrianca' => urldecode($this->uri->segment(5)),
             'localEntrega' => urldecode($this->uri->segment(6)) . "<br/> Sala: " . urldecode($this->uri->segment(7)),
-            'urlQrcode' => urlencode('http://natalsolidario.dev/presente/receberPresente/'.$this->uri->segment(3))
+            'urlQrcode' => urlencode(site_url().'presente/receberPresente/'.$this->uri->segment(3))
         );
 
         //load the view and saved it into $html variable
