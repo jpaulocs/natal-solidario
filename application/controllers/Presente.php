@@ -63,6 +63,8 @@ class Presente extends CI_Controller{
         $this->form_validation->set_rules('descricaoBrinquedo','Brinquedo','required');
         $this->form_validation->set_rules('classificacaoBrinquedo','Classificação do brinquedo','required');
         
+        $presente = $this->Presente_model->pesquisar_por_carta($idCarta);
+        
         if($this->form_validation->run())
         {
             $valorBrinquedo = $this->input->post('valorBrinquedo');
@@ -94,8 +96,6 @@ class Presente extends CI_Controller{
             
             $this->carregarMenu($this->session->userdata('idAdotante')
                 , $this->session->userdata('tokenAdotante'));
-            
-            $presente = $this->Presente_model->pesquisar_por_carta($idCarta);
             
             $data['descricaoPresente'] = ($presente) ? $presente['brinquedo_descricao'] : '';
             $data['valorBrinquedo'] = ($presente) ? $presente['valor'] : '';
@@ -170,62 +170,85 @@ class Presente extends CI_Controller{
 
             $usuario = $this->ion_auth->user()->row();
 
-            $dadosPresente = $this->Presente_model->get_dados_presente($numeroCarta);
-
-            if(is_null($dadosPresente['idPresente'])) {
-                $this->session->set_flashdata('message', 'Não existe presente cadastrado para a carta número ' . $numeroCarta);
+            $data['brinquedo_classificacoes'] = $this->Brinquedo_classificacao_model->get_all_classificacao_brinquedo();
+            $data['dadosPresente'] = $this->Presente_model->get_dados_presente($numeroCarta);
+            
+            if(is_null($data['dadosPresente']['idPresente'])) {
+                
+                $this->load->library('form_validation');
+                
+                $this->form_validation->set_rules('descricaoBrinquedo','Brinquedo','required');
+                $this->form_validation->set_rules('classificacaoBrinquedo','Classificação do brinquedo','required');
+                
+                if($this->form_validation->run())
+                {                 
+                    
+                    $carta = $this->Carta_model->get_carta_by_numeroCarta($numeroCarta);
+                    
+                    $params = array(
+                        'situacao' => 1 /*NOVO*/,
+                        'carta' => $carta['id'],
+                        'brinquedo_descricao' => $this->input->post('descricaoBrinquedo'),
+                        'brinquedo_classificacao' => $this->input->post('classificacaoBrinquedo'),
+                    );
+                    
+                    $params['data_cadastro'] = date('Y-m-d H:i:s');
+                    $this->Presente_model->add($params);
+                    $data['dadosPresente'] = null;
+                }
+                //$this->session->set_flashdata('message', 'Não existe presente cadastrado para a carta número ' . $numeroCarta);
             } else {
-                $this->session->set_flashdata('message', '');
-            }
-
-            $data['allLocaisArmazenamento'] = $this->Local_entrega_model->get_locais_armazenamento();
-            $data['allSituacoesPresente'] = $this->Presente_model->get_all_situacoes_presente();
-
-            if($this->input->post('local_armazenamento')) {
-                $params = array(
-                    'local_armazenamento' => $this->input->post('local_armazenamento')
+                $data['allLocaisArmazenamento'] = $this->Local_entrega_model->get_locais_armazenamento();
+                $data['allSituacoesPresente'] = $this->Presente_model->get_all_situacoes_presente();
+    
+                if($this->input->post('local_armazenamento')) {
+                    $params = array(
+                        'local_armazenamento' => $this->input->post('local_armazenamento'),
+                        'situacao' => 2//$this->input->post('situacao_presente')
+                    );
+                    $this->Presente_model->update($data['dadosPresente']['idPresente'], $params);
+                    
+                    $paramsSituacao = array(
+                        'presente' => $data['dadosPresente']['idPresente'],
+                        'situacao' => $this->input->post('situacao_presente'),
+                        'usuario' => $user->id,
+                        'data_situacao' => date('Y-m-d H:i:s')
+                    );
+                    $this->Presente_historico_situacao_model->add($paramsSituacao);
+                }
+                /*
+                if($this->input->post('situacao_presente')) {
+                    $params = array(
+                        'situacao' => $this->input->post('situacao_presente')
+                    );
+                    $this->Presente_model->update($data['dadosPresente']['idPresente'], $params);
+    
+                    $paramsSituacao = array(
+                        'presente' => $data['dadosPresente']['idPresente'],
+                        'situacao' => $this->input->post('situacao_presente'),
+                        'usuario' => $user->id,
+                        'data_situacao' => date('Y-m-d H:i:s')
+                    );
+                    $this->Presente_historico_situacao_model->add($paramsSituacao);
+    
+                }
+                */
+                $dadosPresenteAposAtualizacao = $this->Presente_model->get_dados_presente($numeroCarta);
+                $dados = array(
+                    'idPresente' => $dadosPresenteAposAtualizacao['idPresente'],
+                    'numeroCarta' => $dadosPresenteAposAtualizacao['numeroCarta'],
+                    'nomeAdotante' => $dadosPresenteAposAtualizacao['adotante_nome'],
+                    'numeroSalaEntrega' => $dadosPresenteAposAtualizacao['numeroSalaEntrega'],
+                    'nomeLocalEntrega' => $dadosPresenteAposAtualizacao['nomeLocalEntrega'],
+                    'responsavel_nome' => $dadosPresenteAposAtualizacao['responsavel_nome'],
+                    'beneficiado_nome' => $dadosPresenteAposAtualizacao['beneficiado_nome'],
+                    'localArmazenamentoPresente' => $dadosPresenteAposAtualizacao['localArmazenamentoPresente'],
+                    'situacaoPresente' => $dadosPresenteAposAtualizacao['situacaoPresente']
                 );
-                $this->Presente_model->update($dadosPresente['idPresente'], $params);
+                $data['dados'] = $dados;
             }
-
-            if($this->input->post('situacao_presente')) {
-                $params = array(
-                    'situacao' => $this->input->post('situacao_presente')
-                );
-                $this->Presente_model->update($dadosPresente['idPresente'], $params);
-
-                $paramsSituacao = array(
-                    'presente' => $dadosPresente['idPresente'],
-                    'situacao' => $this->input->post('situacao_presente'),
-                    'usuario' => $user->id,
-                    'data_situacao' => date('Y-m-d H:i:s')
-                );
-                $this->Presente_historico_situacao_model->add($paramsSituacao);
-
-            }
-
-            $dadosPresenteAposAtualizacao = $this->Presente_model->get_dados_presente($numeroCarta);
-            $dados = array(
-                'idPresente' => $dadosPresenteAposAtualizacao['idPresente'],
-                'numeroCarta' => $dadosPresenteAposAtualizacao['numeroCarta'],
-                'nomeAdotante' => $dadosPresenteAposAtualizacao['adotante_nome'],
-                'numeroSalaEntrega' => $dadosPresenteAposAtualizacao['numeroSalaEntrega'],
-                'nomeLocalEntrega' => $dadosPresenteAposAtualizacao['nomeLocalEntrega'],
-                'responsavel_nome' => $dadosPresenteAposAtualizacao['responsavel_nome'],
-                'beneficiado_nome' => $dadosPresenteAposAtualizacao['beneficiado_nome'],
-                'localArmazenamentoPresente' => $dadosPresenteAposAtualizacao['localArmazenamentoPresente'],
-                'situacaoPresente' => $dadosPresenteAposAtualizacao['situacaoPresente']
-            );
-
-            $data['_view'] = 'presente/receber-presente';
-            $data['dados'] = $dados;
-
-
-            $this->load->view('layouts/main',$data);
-        } else {
-            $data['_view'] = 'presente/receber-presente';
-            $this->load->view('layouts/main',$data);
-        }
-
+        } 
+        $data['_view'] = 'presente/receber-presente';
+        $this->load->view('layouts/main',$data);
     }
 }

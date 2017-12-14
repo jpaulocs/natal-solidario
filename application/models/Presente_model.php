@@ -24,8 +24,11 @@ class Presente_model extends CI_Model
     }
 
     function get_dados_presente($numeroCarta){
-        $this->db->select('carta.numero as numeroCarta, beneficiado.nome as beneficiado_nome, r.nome as responsavel_nome, a.nome as adotante_nome, salap.sala as numeroSalaEntrega, 
-            local.nome as nomeLocalEntrega, p.local_armazenamento as localArmazenamentoPresente, p.id as idPresente, p.situacao as situacaoPresente');
+        $this->db->select('carta.numero as numeroCarta, beneficiado.nome as beneficiado_nome
+            , r.nome as responsavel_nome, a.nome as adotante_nome, salap.sala as numeroSalaEntrega
+            , local.nome as nomeLocalEntrega, p.local_armazenamento as localArmazenamentoPresente
+            , p.id as idPresente, p.situacao as situacaoPresente, p.brinquedo_descricao as descricaoBrinquedo
+            , p.brinquedo_classificacao as classificacaoBrinquedo');
         $this->db->join('beneficiado', 'carta.beneficiado = beneficiado.id');
         $this->db->join('responsavel r', 'beneficiado.responsavel = r.id');
         $this->db->join('adotante a', 'carta.adotante = a.id', 'left');
