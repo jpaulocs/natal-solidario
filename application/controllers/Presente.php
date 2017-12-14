@@ -39,7 +39,12 @@ class Presente extends CI_Controller{
                 $this->session->set_flashdata('message', 'O endereço acessado é inválido, verifique se ele está igual ao recebido por e-mail.');
             }
         } else {
-            $this->session->set_flashdata('message', 'Não localizamos o seu cadastro.');
+            if(null !== $this->session->userdata('origem') && $this->session->userdata('origem') == 'recebimentoPresente'){
+                $this->session->set_flashdata('message', '');
+            } else {
+                $this->session->set_flashdata('message', 'Não localizamos o seu cadastro.');
+            }
+            
         }
     }
     
@@ -111,6 +116,10 @@ class Presente extends CI_Controller{
                     break;
                 }
             }
+            if(isset($idCarta)) {
+                $data['cartaSelecionada'] = $this->Carta_model->get_dados_complementares_carta_por_id($idCarta);
+            }
+
             $data['idade'] = date("Y") - date("Y", strtotime($data['cartaSelecionada']['data_nascimento']));
             
             $data['locais_entrega'] = $this->Local_entrega_regiao_model->get_local_entrega_por_regiao($data['cartaSelecionada']['regiao_administrativa'], date('Y/m/d'));
@@ -127,7 +136,12 @@ class Presente extends CI_Controller{
             $data['numeroSalaEntrega'] = $dadosPresente['numeroSalaEntrega'];
             
             $data['_view'] = 'presente/add';
-            $this->load->view('layouts/main_presente',$data);
+            if(null !== $this->session->userdata('origem') && $this->session->userdata('origem') == 'recebimentoPresente'){
+                $this->load->view('layouts/main',$data);
+            } else {
+                $this->load->view('layouts/main_presente',$data);    
+            }
+            
         }
     }
 
@@ -174,6 +188,7 @@ class Presente extends CI_Controller{
 
             if(is_null($dadosPresente['idPresente'])) {
                 $this->session->set_flashdata('message', 'Não existe presente cadastrado para a carta número ' . $numeroCarta);
+                $this->session->set_flashdata('idCarta', $dadosPresente['idCarta']);
             } else {
                 $this->session->set_flashdata('message', '');
             }

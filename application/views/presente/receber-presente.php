@@ -108,6 +108,12 @@
                 </div>
             </div>
         <?php endif?>
+        <?php if($this->session->flashdata('message')): ?>
+            <?php $this->session->set_userdata('origem', 'recebimentoPresente'); ?>
+            <div class="panel-footer">
+                <a href="<?php echo site_url('presente/add/'.$this->session->flashdata('idCarta')); ?>" class="btn btn-success">Cadastrar Presente</a>
+            </div>
+        <?php endif?>
     </div>
     <?php echo form_close(); ?>
 </div>

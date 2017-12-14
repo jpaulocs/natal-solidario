@@ -218,4 +218,13 @@ class Carta_model extends CI_Model
     function get_carta_by_numeroCarta($numeroCarta) {
         return $this->db->get_where('carta',array('numero'=>$numeroCarta))->row_array();
     }
+
+    function get_dados_complementares_carta_por_id($idCarta) {
+        $this->db->select('carta.*, beneficiado.nome as beneficiado_nome, responsavel.nome as responsavel_nome, beneficiado.data_nascimento');
+        $this->db->join('beneficiado', 'carta.beneficiado = beneficiado.id');
+        $this->db->join('responsavel', 'beneficiado.responsavel = responsavel.id');
+        $this->db->where('carta.id', $idCarta);
+        $this->db->where('carta.removida', false);
+        return $this->db->get('carta')->row_array();
+    }
 }

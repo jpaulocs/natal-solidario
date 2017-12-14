@@ -1,3 +1,6 @@
+<div class="box-header with-border">
+    <h3 class="box-title">Cadastro de presentes</h3>
+</div>
 <div class="row">
 	<?php echo form_open('presente/add/'.$cartaSelecionada['id'], array('method'=>'post','id'=>'myform')); ?>
     <div class="col-md-12">
