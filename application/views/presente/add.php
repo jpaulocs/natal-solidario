@@ -84,8 +84,8 @@
     		<?php 
     		foreach($locais_entrega as $local_entrega) {
 		    ?>		
-            <div class="panel <?php echo (strtotime(date('Y/m/d')) > strtotime($local_entrega['inicio'])) ? 'panel-warning' : 'panel-primary';?>">
-            	<div class="panel-heading">Local de entrega do presente para armazenamento <?php echo (strtotime(date('Y/m/d')) > strtotime($local_entrega['inicio'])) ? ' - Prazo encerrado' : '';?></div>
+            <div class="panel <?php echo (strtotime(date('Y/m/d')) > strtotime($local_entrega['termino'])) ? 'panel-warning' : 'panel-primary';?>">
+            	<div class="panel-heading">Local de entrega do presente para armazenamento <?php echo (strtotime(date('Y/m/d')) > strtotime($local_entrega['termino'])) ? ' - Prazo encerrado' : '';?></div>
             	<table class="table">
             		<tr>
             			<th style="width:20%;">Período</th>
@@ -119,7 +119,7 @@
             		</tr>
             	</table>
             	<?php 
-            	if ($situacao == 1 && (strtotime(date('Y/m/d')) == strtotime($local_entrega_familia['inicio']))) {
+            	if ($situacao == 1 && (strtotime(date('Y/m/d')) == strtotime($local_entrega_familia['termino']))) {
             	?>
             	<div class="panel-body">
             		<h4 style="color:red">O presente ainda não foi entregue. Se desejar entregar durante o evento para as famílias. Comunique os responsáveis pela organização na opção abaixo:</h4>

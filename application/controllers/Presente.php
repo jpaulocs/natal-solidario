@@ -67,6 +67,8 @@ class Presente extends CI_Controller{
         
         $this->form_validation->set_rules('descricaoBrinquedo','Brinquedo','required');
         $this->form_validation->set_rules('classificacaoBrinquedo','Classificação do brinquedo','required');
+
+        $presente = $this->Presente_model->pesquisar_por_carta($idCarta);
         
         if($this->form_validation->run())
         {
@@ -99,8 +101,6 @@ class Presente extends CI_Controller{
             
             $this->carregarMenu($this->session->userdata('idAdotante')
                 , $this->session->userdata('tokenAdotante'));
-            
-            $presente = $this->Presente_model->pesquisar_por_carta($idCarta);
             
             $data['descricaoPresente'] = ($presente) ? $presente['brinquedo_descricao'] : '';
             $data['valorBrinquedo'] = ($presente) ? $presente['valor'] : '';
