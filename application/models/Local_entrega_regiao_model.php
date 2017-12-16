@@ -42,4 +42,23 @@ class Local_entrega_regiao_model extends CI_Model
         
         return $retorno;
     }
+    
+    
+    function get_local_entrega_familias() {
+        $this->db->select('local_entrega_regiao.*, l.nome as nomeLocalEntrega, l.endereco as enderecoLocalEntrega'.
+            ', l.url_google_maps as mapsLocalEntrega, l.local_entrega_familias as entregaFamiliasLocalEntrega'.
+            ', r.nome as regiao_administrativa_nome, r.id as regiao_administrativa_id');
+        $this->db->join('local_entrega l', 'l.id = local_entrega');
+        $this->db->join('regiao_administrativa r', 'r.id = local_entrega_regiao.regiao_administrativa');
+        $this->db->where('ano_evento', date("Y"));
+        $this->db->where('l.local_entrega_familias', true);
+        $this->db->order_by('r.nome', 'asc');
+        $this->db->order_by('l.nome', 'asc');
+        
+        $retorno = $this->db->get('local_entrega_regiao')->result_array();
+        
+        //print_r($this->db->last_query());
+        
+        return $retorno;
+    }
 }

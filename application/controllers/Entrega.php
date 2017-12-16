@@ -7,6 +7,9 @@ class Entrega extends CI_Controller{
         
         $this->load->model('Sala_entrega_presente_model');
         $this->load->model('Sala_entrega_responsavel_model');
+        $this->load->model('Local_entrega_regiao_model');
+        $this->load->model('Carta_model');
+        $this->load->model('Regiao_administrativa_model');
         
         $this->load->add_package_path(APPPATH.'third_party/ion_auth/');
         $this->load->library('ion_auth');
@@ -48,5 +51,21 @@ class Entrega extends CI_Controller{
         else {
             show_error('A sala de palestra informada não foi encontrada.');
         }
+    }
+    
+    function listagem_local_entrega()
+    {
+        $data['locaisEntrega'] = $this->Local_entrega_regiao_model->get_local_entrega_familias();
+        $data['_view'] = 'entrega/listagem_local_entrega';
+        $this->load->view('layouts/main',$data);
+    }
+    
+    function cartas($idRegiaoAdministrativa)
+    {
+        $data['regiao_administrativa'] = $this->Regiao_administrativa_model->get_por_id($idRegiaoAdministrativa);
+        
+        $data['cartas'] = $this->Carta_model->pesquisar_por_regiao($idRegiaoAdministrativa);
+        $data['_view'] = 'entrega/cartas';
+        $this->load->view('layouts/main',$data);
     }
 }

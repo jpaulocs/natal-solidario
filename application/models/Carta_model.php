@@ -227,4 +227,17 @@ class Carta_model extends CI_Model
         $this->db->where('carta.removida', false);
         return $this->db->get('carta')->row_array();
     }
+    
+    
+    function pesquisar_por_regiao($idRegiaoAdministrativa) {
+        $this->db->select('carta.numero, carta.removida, beneficiado.nome as beneficiado_nome, responsavel.nome as responsavel_nome'.
+            ', carta.adotante, carta.credenciado, presente.situacao as presente_situacao');
+        $this->db->join('beneficiado', 'carta.beneficiado = beneficiado.id');
+        $this->db->join('responsavel', 'beneficiado.responsavel = responsavel.id');
+        $this->db->join('presente', 'presente.carta = carta.id');
+        $this->db->order_by('responsavel.nome', 'asc');
+        $this->db->order_by('beneficiado.nome', 'asc');
+        $this->db->where('carta.regiao_administrativa', $idRegiaoAdministrativa);
+        return $this->db->get('carta')->result_array();
+    }
 }

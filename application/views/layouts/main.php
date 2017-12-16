@@ -128,6 +128,9 @@
                                     <li>
                                         <a href="<?php echo site_url('entrega/index');?>"><i class="fa fa-list-ul"></i> Salas para entrega dos presentes</a>
                                     </li>
+                                    <li>
+                                        <a href="<?php echo site_url('entrega/listagem_local_entrega');?>"><i class="fa fa-list-ul"></i> Locais de entrega</a>
+                                    </li>
                                 </ul>
                             </li>
                         <?php
