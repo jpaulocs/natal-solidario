@@ -128,9 +128,6 @@
                                     <li>
                                         <a href="<?php echo site_url('entrega/index');?>"><i class="fa fa-list-ul"></i> Salas para entrega dos presentes</a>
                                     </li>
-                                    <li>
-                                        <a href="<?php echo site_url('entrega/listagem_local_entrega');?>"><i class="fa fa-list-ul"></i> Locais de entrega</a>
-                                    </li>
                                 </ul>
                             </li>
                         <?php
@@ -174,6 +171,15 @@
 								<li>
                                     <a href="<?php echo site_url('carta/index');?>"><i class="fa fa-list-ul"></i> Listar</a>
                                 </li>
+                                <?php 
+                                if($this->session->userdata('grupos_usuario'))
+                                
+                                    if (in_array("admin", $grupos_usuario, true)):
+                                ?>
+                                <li>
+                                    <a href="<?php echo site_url('entrega/listagem_local_entrega');?>"><i class="fa fa-list-ul"></i> Acompanhamento</a>
+                                </li>
+                                <?php endif;?>
 							</ul>
                         </li>
 
@@ -194,6 +200,9 @@
                                 <ul class="treeview-menu">
                                 <li class="active">
                                     <a href="<?php echo site_url('presente/receberPresente');?>"><i class="fa fa-gift"></i> Recebimento</a>
+                                </li>
+                                <li class="active">
+                                    <a href="<?php echo site_url('presente/conferencia');?>"><i class="fa fa-gift"></i> Conferência</a>
                                 </li>
                                 <li class="active">
                                     <a href="<?php echo site_url('presente/entrega');?>"><i class="fa fa-gift"></i> Entrega</a>

@@ -7,12 +7,17 @@ class Sala_entrega_responsavel_model extends CI_Model
         parent::__construct();
     }
     
-    function get_por_sala_entrega($idSalaEntrega)
-    {
-        $this->db->select('responsavel.*');
-        $this->db->join('responsavel', 'sala_entrega_responsavel.responsavel = responsavel.id');        
-        $this->db->where('sala_entrega_presente', $idSalaEntrega);
-        $this->db->order_by('responsavel.nome', 'asc');
-        return $this->db->get('sala_entrega_responsavel')->result_array();
+    function get_por_sala_entrega($idSalaEntrega, $idRegiaoAdministrativa)
+    {        
+        $sql = 'SELECT r.id, UPPER(r.nome) as nome, (SELECT COUNT(1) FROM carta c JOIN beneficiado b ON b.id=c.beneficiado
+            WHERE c.regiao_administrativa = '. $idRegiaoAdministrativa .' AND b.responsavel=r.id) as total_criancas
+            FROM sala_entrega_responsavel
+            JOIN responsavel r ON sala_entrega_responsavel.responsavel = r.id
+            WHERE sala_entrega_presente = '. $idSalaEntrega .'
+            ORDER BY r.nome';
+        //log_message('info',print_r('query: ' . $sql, TRUE));
+        
+        $query = $this->db->query($sql);
+        return $query->result_array();
     }
 }

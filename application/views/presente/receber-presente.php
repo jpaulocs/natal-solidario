@@ -70,6 +70,25 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <td>Local de entrega do presente</td> 
+                            <td>
+                                <div class="form-group">
+                                    <select name="local_entrega" class="form-control">
+                                        <option value=""></option>
+                                        <?php 
+                                        foreach($allLocaisEntrega as $local)
+                                        {
+                                                $selected = ($local['id'] == $dados['presente_local_entrega']) ? ' selected="selected"' : "";
+
+                                                echo '<option value="'.$local['id'].'" '.$selected.'>'.$local['nomeLocalEntrega'].'</option>';
+
+                                        } 
+                                        ?>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                     <div class="box-footer">
                         <button type="submit" class="btn btn-success">

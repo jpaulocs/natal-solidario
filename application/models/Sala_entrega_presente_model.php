@@ -9,7 +9,8 @@ class Sala_entrega_presente_model extends CI_Model
     
     function get_por_ano($ano)
     {
-        $this->db->select('sala_entrega_presente.*, local_entrega.nome as local_entrega_nome, regiao_administrativa.nome as regiao_administrativa_nome');
+        $this->db->select('sala_entrega_presente.*, local_entrega.nome as local_entrega_nome
+            , regiao_administrativa.nome as regiao_administrativa_nome');
         $this->db->join('local_entrega', 'sala_entrega_presente.local_entrega = local_entrega.id');
         $this->db->join('regiao_administrativa', 'sala_entrega_presente.regiao_administrativa = regiao_administrativa.id');
         $this->db->where('ano', $ano);
@@ -18,7 +19,8 @@ class Sala_entrega_presente_model extends CI_Model
     
     function get_por_id($id)
     {
-        $this->db->select('sala_entrega_presente.*, local_entrega.nome as local_entrega_nome, regiao_administrativa.nome as regiao_administrativa_nome');
+        $this->db->select('sala_entrega_presente.*, local_entrega.nome as local_entrega_nome
+            , regiao_administrativa.nome as regiao_administrativa_nome, regiao_administrativa.id as regiao_administrativa_id');
         $this->db->join('local_entrega', 'sala_entrega_presente.local_entrega = local_entrega.id');
         $this->db->join('regiao_administrativa', 'sala_entrega_presente.regiao_administrativa = regiao_administrativa.id');
         $this->db->where('sala_entrega_presente.id', $id);

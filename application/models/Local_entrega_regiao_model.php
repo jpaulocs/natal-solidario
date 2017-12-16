@@ -45,7 +45,7 @@ class Local_entrega_regiao_model extends CI_Model
     
     
     function get_local_entrega_familias() {
-        $this->db->select('local_entrega_regiao.*, l.nome as nomeLocalEntrega, l.endereco as enderecoLocalEntrega'.
+        $this->db->select('local_entrega_regiao.*, l.nome as nomeLocalEntrega, l.id as idLocalEntrega, l.endereco as enderecoLocalEntrega'.
             ', l.url_google_maps as mapsLocalEntrega, l.local_entrega_familias as entregaFamiliasLocalEntrega'.
             ', r.nome as regiao_administrativa_nome, r.id as regiao_administrativa_id');
         $this->db->join('local_entrega l', 'l.id = local_entrega');

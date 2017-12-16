@@ -43,7 +43,13 @@ class Entrega extends CI_Controller{
         
         if($data['salaSelecionada'])
         {
-            $data['responsaveis'] = $this->Sala_entrega_responsavel_model->get_por_sala_entrega($idSalaPalestra);
+            $data['responsaveis'] = $this->Sala_entrega_responsavel_model->get_por_sala_entrega(
+                $idSalaPalestra, $data['salaSelecionada']['regiao_administrativa_id']);
+            
+            $data['total'] = 0;
+            foreach($data['responsaveis'] as $item) {
+                $data['total'] = $data['total'] + $item['total_criancas']; 
+            }
             
             $data['_view'] = 'entrega/inscritos';
             $this->load->view('layouts/main',$data);

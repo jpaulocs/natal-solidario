@@ -240,4 +240,14 @@ class Carta_model extends CI_Model
         $this->db->where('carta.regiao_administrativa', $idRegiaoAdministrativa);
         return $this->db->get('carta')->result_array();
     }
+    
+    function get_total_cartas_por_regiao() {
+        $this->db->select('r.id, r.nome, COUNT(1) as total');
+        $this->db->join('regiao_administrativa r', 'r.id=carta.regiao_administrativa');
+        $this->db->group_by('r.id');
+        $this->db->group_by('r.nome');
+        $this->db->order_by('r.nome', 'asc');
+        $this->db->where('carta.removida', false);
+        return $this->db->get('carta')->result_array();
+    }
 }

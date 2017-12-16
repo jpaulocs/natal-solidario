@@ -27,7 +27,7 @@ class Presente_model extends CI_Model
         $this->db->select('carta.id as idCarta, carta.numero as numeroCarta, beneficiado.nome as beneficiado_nome
             , beneficiado.sexo as beneficiado_sexo, r.nome as responsavel_nome, a.nome as adotante_nome, a.email as adotante_email
             , salap.sala as numeroSalaEntrega, local.nome as nomeLocalEntrega, p.local_armazenamento as localArmazenamentoPresente
-            , p.id as idPresente, p.situacao as situacaoPresente, p.imagem_entrega');
+            , p.id as idPresente, p.situacao as situacaoPresente, p.imagem_entrega, p.local_entrega as presente_local_entrega');
         $this->db->join('beneficiado', 'carta.beneficiado = beneficiado.id');
         $this->db->join('responsavel r', 'beneficiado.responsavel = r.id');
         $this->db->join('adotante a', 'carta.adotante = a.id', 'left');
@@ -47,5 +47,17 @@ class Presente_model extends CI_Model
 
     function get_all_situacoes_presente() {
         return $this->db->get('presente_situacao')->result_array();
+    }
+    
+    function get_presentes_por_local_entrega() {
+        $query = $this->db->query('SELECT c.regiao_administrativa as carta_destino, r.nome as presente_nome_regiao_entrega
+            , l.nome as presente_nome_local_entrega, COUNT(p.id) AS total 
+            FROM local_entrega l
+            JOIN regiao_administrativa r ON r.id = l.regiao_administrativa
+            LEFT JOIN presente p ON p.local_entrega = l.id AND p.situacao >= 4
+            LEFT JOIN carta c ON c.id = p.carta
+            GROUP BY l.nome, r.nome, c.regiao_administrativa
+            ORDER BY c.regiao_administrativa');
+        return $query->result_array();
     }
 }

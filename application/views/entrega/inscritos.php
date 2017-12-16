@@ -24,11 +24,27 @@
             	<div class="panel panel-primary">
                 	<div class="panel-heading">Inscritos</div>            	
                     <table class="table">
-                        <?php foreach($responsaveis as $r){ ?>
+                    	<tr>
+<!--                     		<th>ID</th> -->
+                    		<th>Responsável</th>
+                    		<th>Qtd crianças</th>
+                    	</tr>
+                        <?php 
+                        foreach($responsaveis as $r){ 
+                            if ($r['total_criancas'] > 0) {
+                        ?>
                         <tr>
+<!--                              <td><?php echo $r['id']; ?></td>-->
                             <td><?php echo $r['nome']; ?></td>
+                            <td><?php echo $r['total_criancas']; ?></td>
                         </tr>
-                        <?php } ?>
+                        <?php } 
+                        } ?>
+                        <tr>
+<!--                         	<th></th> -->
+                        	<th>TOTAL DE CRIANÇAS NA SALA</th>
+                        	<th><?php echo $total; ?></th>
+                        </tr>
                     </table>
                 </div>                
             </div>
