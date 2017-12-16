@@ -1,6 +1,6 @@
 <div class="row">
-    <?php echo form_open('presente/receberPresente'); ?>
     <div class="col-md-12">
+	    <?php echo form_open('presente/receberPresente'); ?>
         <div class="box box-info">
             <div class="box-header with-border">
                 <h3 class="box-title">Recebimento de Presentes</h3>
@@ -22,9 +22,11 @@
                     <i class="fa fa-check"></i> Buscar
                 </button>
             </div>
-            
         </div>
+        <?php echo form_close(); ?>
+        
         <?php if(isset($dados) && !is_null($dados['idPresente'])):?>
+        <?php echo form_open('presente/receberPresente/'.$dados['numeroCarta']); ?>
             
             <div class="box">
                 <div class="panel panel-primary">
@@ -107,13 +109,16 @@
                     <div class="panel-footer"><a href="<?php echo site_url('presente/gerarEtiqueta/'.$dados['numeroCarta']."/". $dados['responsavel_nome'] . "/" . $dados['beneficiado_nome'] . "/" . $dados['nomeLocalEntrega']. "/" . $dados['numeroSalaEntrega']); ?>" class="btn btn-success" target="_blank">Visualizar etiqueta</a></div>
                 </div>
             </div>
+        <?php echo form_close(); ?>
         <?php endif?>
-        <?php if($this->session->flashdata('message')): ?>
+        
+        <?php if(isset($dados) && is_null($dados['idPresente'])): ?>
+        <?php echo form_open('presente/receberPresente'); ?>
             <?php $this->session->set_userdata('origem', 'recebimentoPresente'); ?>
             <div class="panel-footer">
                 <a href="<?php echo site_url('presente/add/'.$this->session->flashdata('idCarta')); ?>" class="btn btn-success">Cadastrar Presente</a>
             </div>
+	    <?php echo form_close(); ?>
         <?php endif?>
     </div>
-    <?php echo form_close(); ?>
 </div>

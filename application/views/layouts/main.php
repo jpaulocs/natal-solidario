@@ -119,11 +119,14 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-address-card"></i> <span>Programação das palestras</span>
+                                    <i class="fa fa-address-card"></i> <span>Programação </span>
                                 </a>
                                 <ul class="treeview-menu">
                                     <li>
-                                        <a href="<?php echo site_url('palestra/index');?>"><i class="fa fa-list-ul"></i> Listar</a>
+                                        <a href="<?php echo site_url('palestra/index');?>"><i class="fa fa-list-ul"></i> Salas para palestra</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo site_url('entrega/index');?>"><i class="fa fa-list-ul"></i> Salas para entrega dos presentes</a>
                                     </li>
                                 </ul>
                             </li>
@@ -188,6 +191,9 @@
                                 <ul class="treeview-menu">
                                 <li class="active">
                                     <a href="<?php echo site_url('presente/receberPresente');?>"><i class="fa fa-gift"></i> Recebimento</a>
+                                </li>
+                                <li class="active">
+                                    <a href="<?php echo site_url('presente/entrega');?>"><i class="fa fa-gift"></i> Entrega</a>
                                 </li>
                             </ul>
                             </li>
