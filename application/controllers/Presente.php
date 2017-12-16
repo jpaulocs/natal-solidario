@@ -8,7 +8,8 @@ class Presente extends CI_Controller{
 
         $this->load->add_package_path(APPPATH.'third_party/ion_auth/');
         $this->load->library('ion_auth');
-
+        $this->load->library('email');
+        
         $this->load->model('Carta_model');
         $this->load->model('Adotante_model');
         $this->load->model('Brinquedo_classificacao_model');
@@ -70,6 +71,8 @@ class Presente extends CI_Controller{
 
         $presente = $this->Presente_model->pesquisar_por_carta($idCarta);
         
+        $data['origem'] = ($this->session->userdata('origem') != null) ? $this->session->userdata('origem') : $this->input->post('hdnOrigem');
+        
         if($this->form_validation->run())
         {
             $valorBrinquedo = $this->input->post('valorBrinquedo');
@@ -95,8 +98,13 @@ class Presente extends CI_Controller{
                 $this->Presente_model->add($params);
             }
             
-            redirect('presente/index/'.$this->session->userdata('idAdotante').'/'.$this->session->userdata('tokenAdotante'), 'location');
-            
+            log_message('info',print_r('origem: ' . $this->session->userdata('origem'), TRUE));
+            if($data['origem'] == 'recebimentoPresente'){
+                $carta = $this->Carta_model->get_carta_pedido($idCarta);
+                redirect('presente/receberPresente/'.$carta['numero']);
+            } else {
+                redirect('presente/index/'.$this->session->userdata('idAdotante').'/'.$this->session->userdata('tokenAdotante'), 'location');
+            }
         } else {
             
             $this->carregarMenu($this->session->userdata('idAdotante')
@@ -136,7 +144,8 @@ class Presente extends CI_Controller{
             $data['numeroSalaEntrega'] = $dadosPresente['numeroSalaEntrega'];
             
             $data['_view'] = 'presente/add';
-            if(null !== $this->session->userdata('origem') && $this->session->userdata('origem') == 'recebimentoPresente'){
+            log_message('info',print_r('origem: ' . $this->session->userdata('origem'), TRUE));
+            if($data['origem'] == 'recebimentoPresente'){
                 $this->load->view('layouts/main',$data);
             } else {
                 $this->load->view('layouts/main_presente',$data);    
@@ -184,17 +193,22 @@ class Presente extends CI_Controller{
 
             $usuario = $this->ion_auth->user()->row();
 
+            //log_message('info',print_r('numeroCarta: ' . $numeroCarta, TRUE));
+            
             $dadosPresente = $this->Presente_model->get_dados_presente($numeroCarta);
-
+            
             if(is_null($dadosPresente['idPresente'])) {
                 $this->session->set_flashdata('message', 'Não existe presente cadastrado para a carta número ' . $numeroCarta);
                 $this->session->set_flashdata('idCarta', $dadosPresente['idCarta']);
+                
+                //log_message('info',print_r('PRESENTE NAO CADASTRADO. ID CARTA: ' . $dadosPresente['idCarta'], TRUE));
             } else {
                 $this->session->set_flashdata('message', '');
             }
 
             $data['allLocaisArmazenamento'] = $this->Local_entrega_model->get_locais_armazenamento();
             $data['allSituacoesPresente'] = $this->Presente_model->get_all_situacoes_presente();
+            $data['allLocaisEntrega'] = $this->Local_entrega_regiao_model->get_local_entrega_familias();
 
             if($this->input->post('local_armazenamento')) {
                 $params = array(
@@ -205,10 +219,11 @@ class Presente extends CI_Controller{
 
             if($this->input->post('situacao_presente')) {
                 $params = array(
-                    'situacao' => $this->input->post('situacao_presente')
+                    'situacao' => $this->input->post('situacao_presente'),
+                    'local_entrega' => $this->input->post('local_entrega'),
                 );
                 $this->Presente_model->update($dadosPresente['idPresente'], $params);
-
+                $this->session->set_flashdata('message', 'O presente foi atualizado com sucesso.');
                 $paramsSituacao = array(
                     'presente' => $dadosPresente['idPresente'],
                     'situacao' => $this->input->post('situacao_presente'),
@@ -229,7 +244,8 @@ class Presente extends CI_Controller{
                 'responsavel_nome' => $dadosPresenteAposAtualizacao['responsavel_nome'],
                 'beneficiado_nome' => $dadosPresenteAposAtualizacao['beneficiado_nome'],
                 'localArmazenamentoPresente' => $dadosPresenteAposAtualizacao['localArmazenamentoPresente'],
-                'situacaoPresente' => $dadosPresenteAposAtualizacao['situacaoPresente']
+                'situacaoPresente' => $dadosPresenteAposAtualizacao['situacaoPresente'],
+                'presente_local_entrega' => $dadosPresenteAposAtualizacao['presente_local_entrega'],
             );
 
             $data['_view'] = 'presente/receber-presente';
@@ -242,5 +258,167 @@ class Presente extends CI_Controller{
             $this->load->view('layouts/main',$data);
         }
 
+    }
+    
+    function entrega($idPresente = null) {
+        if (!$this->ion_auth->logged_in())
+        {
+            $this->session->set_flashdata('message', 'O conteúdo da página é restrito para usuários autenticados');
+            redirect('login');
+        } else {
+            $user = $this->ion_auth->user()->row();
+            $user_groups = $this->ion_auth->get_users_groups()->result();
+            
+            $grupos = array();
+            foreach ($user_groups as $grupo) {
+                array_push($grupos, $grupo->name);
+            }
+            
+            $this->session->set_userdata('usuario_logado', $user->email);
+            $this->session->set_userdata('grupos_usuario', $grupos);
+            $this->session->set_userdata('usuario_logado_id', $user->id);
+        }
+        
+        $data['imagem_entrega'] = null;
+        
+        //log_message('info',print_r('PRESENTE: ' . $idPresente, TRUE));
+        
+        if($this->input->post('numeroCarta')) {
+            $numeroCarta = $this->input->post('numeroCarta');
+            $dadosPresente = $this->Presente_model->get_dados_presente($numeroCarta);
+            
+            if ($dadosPresente['situacaoPresente'] == 5) {
+                $data['imagem_entrega'] = $dadosPresente['imagem_entrega'];
+            }
+            $data['dadosPresente'] = $dadosPresente;
+        }
+        
+        if (isset($idPresente)) {
+            
+            if(isset($_FILES['imagem']) && is_uploaded_file($_FILES['imagem']['tmp_name'])) {
+                
+                $curYear = date('Y');
+                
+                if (!is_dir('uploads')) {
+                    mkdir('./uploads', 0777, true);
+                }
+                
+                if (!is_dir('uploads/entrega')) {
+                    mkdir('./uploads/entrega', 0777, true);
+                }
+                
+                if (!is_dir('uploads/entrega/' . $curYear)) {
+                    mkdir('./uploads/entrega/' . $curYear, 0777, true);
+                }
+                
+                
+                $path = $_FILES['imagem']['name'];
+                
+                $newName = 'CARTA_NUMERO_' . $this->input->post('numeroCarta') . '.' . pathinfo($path, PATHINFO_EXTENSION);
+                
+                //CONFIGURACAO UPLOAD
+                $config['upload_path']      = './uploads/entrega/'.$curYear;
+                $config['allowed_types']    = 'gif|jpg|jpeg|png';
+                $config['file_name']        = $newName;
+                #$config['max_size']    	= '100';
+                #$config['max_width']       = '1024';
+                #$config['max_height']      = '768';
+                $this->load->library('upload', $config);
+                
+                $this->upload->do_upload('imagem');
+                $params['imagem_entrega'] = 'entrega/' . $curYear . '/' . $newName;
+                $params['situacao'] = 5;/*ENTREGUE*/
+                
+                $this->Presente_model->update($idPresente, $params);
+                
+                $data['imagem_entrega'] = $params['imagem_entrega'];
+                
+                $infoEmail['nomeAdotante'] = $dadosPresente['adotante_nome'];
+                $infoEmail['beneficiado_sexo'] = $dadosPresente['beneficiado_sexo'];
+                $infoEmail['beneficiado'] = $dadosPresente['beneficiado_nome'];
+                $infoEmail['imagem_entrega'] = $params['imagem_entrega'];
+                
+                $body = $this->load->view('email/modelo_email_entrega_presente.php',$infoEmail,TRUE);
+                
+                if ($dadosPresente['adotante_email']) {
+                    $params2['email_entrega_enviado'] = $this->send_mail($body, $dadosPresente['adotante_email']);
+                    //log_message('info',print_r('email_entrega_enviado: ' . $params2['email_entrega_enviado'], TRUE));
+                    $this->Presente_model->update($idPresente, $params2);
+                }
+            }
+        }
+        $data['_view'] = 'presente/entrega';
+        $this->load->view('layouts/main',$data);
+    }
+    
+    
+    private function send_mail($body, $emailTo) {
+        
+        $from_email = "";
+        $config = Array(
+            'protocol' => '',
+            'smtp_host' => '',
+            'smtp_port' => 587,
+            'smtp_user' => '',
+            'smtp_pass' => '',
+            'mailtype'  => 'html',
+            'charset'   => 'utf-8',
+            'smtp_crypto' => 'ssl'
+            );
+        
+        $this->email->initialize($config);
+        $this->email->set_mailtype("html");
+        $this->email->set_newline("\r\n");
+        $this->email->from($from_email, 'Heróis de Verdade');
+        $this->email->to($emailTo);
+        $this->email->subject('Natal Solidário - Entrega do presente');
+        $this->email->message($body);
+        
+        //$this->email->send(FALSE);
+        //return $this->email->print_debugger(array('headers'));
+        return $this->email->send();
+    }
+    
+    function conferencia() {
+        
+        $totalCartasRecebidasPorRegiao = $this->Carta_model->get_total_cartas_por_regiao();
+        
+        $totalPresentesConferidosPorRegiao = $this->Presente_model->get_presentes_por_local_entrega();
+        
+        $locaisEntrega = $this->Local_entrega_regiao_model->get_local_entrega_familias();
+        $data['locaisEntrega'] = $locaisEntrega;
+        
+        $data['totalCartasRecebidasPorRegiao'] = array();
+        $i = 0;
+        foreach($totalCartasRecebidasPorRegiao as $regiao) {
+            log_message('info',print_r('REGIAO: ' . $regiao['nome'] . ' - total de cartas: ' . $regiao['total'], TRUE));
+            $regiao['conferidosPorRegiao'] = array();
+
+            foreach($locaisEntrega as $local) {
+                
+                $encontrado = false;
+                foreach($totalPresentesConferidosPorRegiao as $item) {
+                
+                    if ($regiao['id'] === $item['carta_destino']) {
+                    
+                        if ($local['nomeLocalEntrega'] === $item['presente_nome_local_entrega']) {
+                            $regiao['conferidosPorRegiao'][$item['presente_nome_local_entrega']] = $item['total'];
+                            
+                            //log_message('info',print_r('ITEM_REGIAO: ' . $item['presente_nome_local_entrega'] . ': ' . $item['total'], TRUE));
+                            $encontrado = true;
+                            break;
+                        } 
+                    }
+                }
+                if (!$encontrado) {
+                    $regiao['conferidosPorRegiao'][$local['nomeLocalEntrega']] = 0;
+                    //log_message('info',print_r('ITEM_REGIAO: ' . $local['nomeLocalEntrega'] . ': ' . 0, TRUE));
+                }
+            }
+            $data['totalCartasRecebidasPorRegiao'][$i++] = $regiao;
+        }
+        //$data['totalCartasRecebidasPorRegiao'] = $totalCartasRecebidasPorRegiao;
+        $data['_view'] = 'presente/conferencia';
+        $this->load->view('layouts/main',$data);
     }
 }
