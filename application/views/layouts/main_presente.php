@@ -93,7 +93,7 @@
             </div>
             <!-- /.content-wrapper -->
             <footer class="main-footer">
-                <strong>Natal Solidário 2017</strong>
+                <strong>Natal Solidário 2018</strong>
             </footer>
 
             <!-- Control Sidebar -->
